@@ -3460,24 +3460,24 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-image: url("../img/header.jpg");
   background-position: center;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   color: white;
   text-shadow: 0 0 20px black; }
   #header .logo {
-    width: 250px;
+    width: 300px;
     margin-top: 130px;
     margin-bottom: 50px;
     filter: invert(1); }
   #header .heading {
-    font-size: 3.5rem;
-    text-transform: uppercase; }
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    margin-bottom: .3rem; }
   #header p {
     width: 600px;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 500; }
   #header .social-media {
-    font-size: 1.7rem; }
+    font-size: 2.3rem; }
     #header .social-media .fab {
       margin: 15px; }
 
@@ -3493,12 +3493,16 @@ a.text-dark:hover, a.text-dark:focus {
     padding-right: 3rem;
     text-transform: capitalize;
     width: 220px;
-    margin: 30px; }
+    margin: 30px;
+    box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
 #member {
+  box-shadow: inset 0 8px 30px -4px black;
+  background-image: linear-gradient(135deg, rgba(17, 7, 38, 0.9), #110726);
+  background-repeat: repeat-x;
   padding-top: 150px;
-  padding-bottom: 100px;
-  background-color: #0C041C; }
+  padding-bottom: 100px; }
   #member .wrapper {
     text-align: center; }
   #member h1 {
@@ -3515,7 +3519,7 @@ a.text-dark:hover, a.text-dark:focus {
       #member .portraits .portrait .name {
         margin-top: 8px;
         margin-bottom: 0;
-        color: rgba(255, 255, 255, 0.9); }
+        color: white; }
       #member .portraits .portrait .fab {
         margin: 10px 5px;
         font-size: 1.3rem; }
@@ -3547,6 +3551,16 @@ a.text-dark:hover, a.text-dark:focus {
     #booking .content .video {
       margin-top: 130px; }
 
+#events {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  background-image: linear-gradient(135deg, #ff3275, #6d26ff);
+  background-repeat: repeat-x;
+  box-shadow: inset 0 8px 30px -4px rgba(0, 0, 0, 0.5); }
+  #events h1 {
+    font-size: 4rem; }
+
 p {
   font-size: 1.5rem; }
 
@@ -3557,7 +3571,8 @@ h1 {
   text-transform: uppercase;
   border-radius: 2rem;
   padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  padding-right: 1.5rem;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.4); }
 
 strong {
   font-style: italic;
