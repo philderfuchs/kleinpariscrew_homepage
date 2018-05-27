@@ -1,5 +1,5 @@
 #header {
-  height: 80vh;
+  height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@
 }
 
 #member {
-  //padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 100px;
 
   color: black;
@@ -75,15 +75,20 @@
   .heading {
     height: 20vh;
 
-    h1 {font-size: 4rem;}
+    h1 {
+      font-size: 3rem;
+    }
     strong {
       font-style: italic;
     }
   }
   .portraits {
-    margin-top: 40px;
+    margin-top: 150px;
     margin-bottom: 40px;
-
+    .row {
+      @extend .justify-content-center;
+      margin-bottom: 25px;
+    }
     .portrait {
       max-width: 100%;
       max-height: 100%;
