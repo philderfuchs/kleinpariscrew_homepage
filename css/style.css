@@ -3761,6 +3761,16 @@ a.text-dark:hover, a.text-dark:focus {
     #events .battle .btn {
       margin-right: 30px; }
 
+#footer {
+  background: #110726;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 50px 0; }
+  #footer .fab {
+    margin: 0 10px; }
+  #footer img {
+    width: 100px;
+    filter: invert(1); }
+
 p {
   font-size: 1.5rem; }
 
