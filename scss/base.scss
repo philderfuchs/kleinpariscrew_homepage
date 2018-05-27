@@ -88,29 +88,29 @@
   }
 
   .portraits {
-    margin-top: 120px;
+    margin-top: 95px;
 
     text-align: center;
-    color: rgba($text-color, .7);
+    color: rgba($text-color, .6);
     .portrait {
       margin-bottom: 20px;
       .name {
         @extend h3;
         margin-top: 8px;
         margin-bottom: 0;
-        color: rgba($text-color, 1);
+        color: rgba($text-color, .9);
       }
 
       .fab {
         margin: 10px 5px;
         font-size: 1.3rem;
-        color: rgba($text-color, .7);
       }
       .row {
         @extend .justify-content-center;
         margin-bottom: 25px;
       }
       img {
+      margin-top: 3px;
         max-width: 100%;
         max-height: 100%;
       }
