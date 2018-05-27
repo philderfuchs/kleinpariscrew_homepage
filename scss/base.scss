@@ -20,7 +20,7 @@
     filter: invert(1);
   }
 
-  .heading {
+  .caption {
     //margin-bottom: 10px;
     font-size: 3.4rem;
     text-transform: uppercase;
@@ -131,6 +131,9 @@
       text-transform: uppercase;
       margin-bottom: 0;
     }
+    hr {
+      background: rgba(black, .4);
+    }
   }
 
   .content {
@@ -144,7 +147,7 @@
 }
 
 #events {
-  padding-top: 100px;
+  padding-top: 40px;
   padding-bottom: 100px;
 
   color: white;
@@ -152,14 +155,14 @@
   @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
 
   .heading {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     h4 {
       color: rgba(white, .4);
       text-transform: uppercase;
       margin-bottom: 0;
     }
     hr {
-      border: 1px solid rgba(white, .4);
+      background: rgba(white, .4);
     }
   }
   .camp {
@@ -175,12 +178,6 @@
     }
   }
 
-  .slick-carousel {
-    .item {
-      height: 300px;
-      margin: 0px 20px;
-    }
-  }
 }
 
 // global settings
@@ -220,4 +217,11 @@ strong {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.slick-carousel {
+  .item {
+    height: 300px;
+    margin: 0 20px;
+  }
 }
