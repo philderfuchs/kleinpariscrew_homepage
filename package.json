@@ -1,0 +1,16 @@
+{
+  "name": "kleinpariscrew",
+  "version": "1.0.0",
+  "description": "kleinparis homepage",
+  "scripts": {
+    "start": "node-sass scss/style.scss css/style.css --watch | autoreload-server -d ./ -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philipp Anders",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "node-sass": "^4.9.0",
+    "simple-autoreload-server": "^0.2.7"
+  }
+}
