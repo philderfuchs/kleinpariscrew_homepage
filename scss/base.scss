@@ -209,14 +209,21 @@
 #footer {
   background: $bg-dark;
   color: rgba(white, .7);
-  padding: 50px 0;
+  padding: 30px 0;
   .fab {
     margin: 0 10px;
   }
 
   img {
-    width: 100px;
+    width: 70px;
     filter: invert(1);
+  }
+  .bordered {
+    border-left: 1px solid rgba(white, .3);
+    text-align: center;
+  }
+  .social-media {
+    text-align: right;
   }
 }
 
