@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -3626,29 +3631,32 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden !important; }
 
 #header {
-  height: 87vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background-size: cover;
-  background-image: url("../img/header.jpg");
-  background-position: center;
+  height: 87vh;
   color: white;
-  text-shadow: 0 0 20px black; }
+  text-shadow: 0 0 20px black;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center; }
   #header .logo {
     width: 300px;
     margin-top: 130px;
     margin-bottom: 50px;
     filter: invert(1); }
+    @media (max-width: 991.98px) {
+      #header .logo {
+        width: 225px; } }
   #header .caption {
+    margin-bottom: .3rem;
     font-size: 3.4rem;
-    text-transform: uppercase;
-    margin-bottom: .3rem; }
+    text-transform: uppercase; }
+    @media (max-width: 767.98px) {
+      #header .caption {
+        font-size: 1.5rem;
+        margin-bottom: 30px; } }
   #header p {
-    width: 650px;
-    font-size: 1.6rem;
     text-align: center;
+    font-size: 1.6rem;
     font-weight: 500; }
   #header .social-media {
     font-size: 2.3rem; }
@@ -3664,16 +3672,22 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center;
   height: 0; }
+  @media (max-width: 767.98px) {
+    #cores {
+      visibility: hidden; } }
   #cores .btn {
-    font-size: 1.5rem;
-    border-radius: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-transform: capitalize;
-    width: 220px;
     margin: 30px;
-    box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.4);
-    border-top: 1px solid rgba(255, 255, 255, 0.4); }
+    width: 180px;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 992px) {
+      #cores .btn {
+        width: 220px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 1.5rem; } }
 
 #member {
   box-shadow: inset 0 8px 30px -4px black;

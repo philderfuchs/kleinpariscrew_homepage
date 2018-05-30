@@ -13,3 +13,19 @@ $bg-light: #F8F5FF;
 
 $enable-shadows: true;
 $font-weight-normal: 300;
+
+@mixin pad-x($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
+@mixin pad-y($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
