@@ -3650,8 +3650,10 @@ a {
     margin-top: 30px; }
   #events .camp {
     margin-bottom: 100px; }
-    #events .camp .btn {
-      margin-left: 30px; }
+    #events .camp .description {
+      text-align: right; }
+      #events .camp .description .btn {
+        margin-left: 30px; }
     #events .camp .slick-carousel {
       margin-top: 50px; }
       #events .camp .slick-carousel .item {
@@ -3664,6 +3666,9 @@ a {
       filter: invert(1); }
     #events .battle .btn {
       margin-right: 30px; }
+  @media (max-width: 991.98px) {
+    #events .description {
+      text-align: center !important; } }
 
 #footer {
   background: #110726;
