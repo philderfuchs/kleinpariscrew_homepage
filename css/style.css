@@ -3606,13 +3606,13 @@ a {
   padding-top: 40px;
   padding-bottom: 120px;
   background: #F8F5FF; }
-  #booking .heading {
+  #booking .section-heading {
     margin-bottom: 50px; }
-    #booking .heading h4 {
+    #booking .section-heading h4 {
       color: rgba(0, 0, 0, 0.3);
       text-transform: uppercase;
       margin-bottom: 0; }
-    #booking .heading hr {
+    #booking .section-heading hr {
       background: rgba(0, 0, 0, 0.1); }
   #booking .content {
     color: black; }
@@ -3634,13 +3634,13 @@ a {
   background-image: linear-gradient(135deg, #ff3275, #6d26ff);
   background-repeat: repeat-x;
   box-shadow: inset 0 8px 30px -4px rgba(0, 0, 0, 0.5); }
-  #events .heading {
+  #events .section-heading {
     margin-bottom: 20px; }
-    #events .heading h4 {
+    #events .section-heading h4 {
       color: rgba(255, 255, 255, 0.4);
       text-transform: uppercase;
       margin-bottom: 0; }
-    #events .heading hr {
+    #events .section-heading hr {
       background: rgba(255, 255, 255, 0.4);
       box-shadow: 0 -3px 8px 0px rgba(0, 0, 0, 0.25); }
   #events h1 {
