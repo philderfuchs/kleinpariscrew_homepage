@@ -90,8 +90,10 @@
   @include gradient-directional(rgba($bg-dark, .9), rgba($bg-dark, 1), 90deg + 45deg);
 
   .description {
-    @include pad-x(40px);
-    text-align: right;
+    @include media-breakpoint-up(lg) {
+      padding-right: $lg-middle-pad;
+      text-align: right;
+    }
     @include media-breakpoint-down(md) {
       text-align: center;
     }
@@ -106,7 +108,9 @@
 
   .portraits {
     margin-top: 95px;
-    padding: 0 40px;
+    @include media-breakpoint-up(lg) {
+      padding-left: $lg-middle-pad;
+    }
 
     text-align: center;
     color: rgba($text-color, .6);
@@ -168,15 +172,19 @@
     color: black;
 
     .video {
+      @include media-breakpoint-up(lg) {
+        padding-right: $lg-middle-pad;
+      }
       margin-top: 130px;
-      @include pad-x(40px);
       @include media-breakpoint-down(md) {
         margin-top: 70px;
       }
 
     }
     .description {
-      @include pad-x(40px)
+      @include media-breakpoint-up(lg) {
+        padding-left: $lg-middle-pad;
+      }
     }
   }
 }
