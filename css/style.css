@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
-#header {
+#header, #cores {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -3668,9 +3668,6 @@ a.text-dark:hover, a.text-dark:focus {
       color: #FF3275; }
 
 #cores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 0; }
   @media (max-width: 767.98px) {
     #cores {
