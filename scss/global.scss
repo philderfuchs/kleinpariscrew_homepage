@@ -43,3 +43,10 @@ a {
     color: $primary;
   }
 }
+
+// necessary to avoid outer blank space
+// happens when container are wrapped
+section {
+  overflow: auto;
+  position: relative;
+}
