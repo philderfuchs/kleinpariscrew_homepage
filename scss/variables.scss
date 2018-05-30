@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+$headings-font-family: 'Barlow', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+$primary: #FF3275;
+$secondary: #0FF0A9;
+$info: #6D26FF;
+
+$bg-dark: #110726;
+$bg-light: #F8F5FF;
+
+$enable-shadows: true;
+$font-weight-normal: 300;
+
+@mixin pad-x($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
+@mixin pad-y($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}
+
+@mixin margin-x($size) {
+  margin-left: $size;
+  margin-right: $size;
+}
+
+@mixin margin-y($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%responsive {
+  width: 100%;
+}
