@@ -1,284 +1,47 @@
-#header {
-  @extend %flex-center;
-  flex-direction: column;
-  height: 87vh;
+@import "variables";
 
-  color: white;
-  text-shadow: 0 0 20px black;
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-  background-position: center;
+/*!
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
-  .logo {
-    width: 300px;
-    margin-top: 130px;
-    margin-bottom: 50px;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins.scss";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+//@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+//@import "../node_modules/bootstrap/scss/tables";
+//@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+//@import "../node_modules/bootstrap/scss/transitions";
+//@import "../node_modules/bootstrap/scss/dropdown";
+//@import "../node_modules/bootstrap/scss/button-group";
+//@import "../node_modules/bootstrap/scss/input-group";
+//@import "../node_modules/bootstrap/scss/custom-forms";
+//@import "../node_modules/bootstrap/scss/nav";
+//@import "../node_modules/bootstrap/scss/navbar";
+//@import "../node_modules/bootstrap/scss/card";
+//@import "../node_modules/bootstrap/scss/breadcrumb";
+//@import "../node_modules/bootstrap/scss/pagination";
+//@import "../node_modules/bootstrap/scss/badge";
+//@import "../node_modules/bootstrap/scss/jumbotron";
+//@import "../node_modules/bootstrap/scss/alert";
+//@import "../node_modules/bootstrap/scss/progress";
+//@import "../node_modules/bootstrap/scss/media";
+//@import "../node_modules/bootstrap/scss/list-group";
+//@import "../node_modules/bootstrap/scss/close";
+//@import "../node_modules/bootstrap/scss/modal";
+//@import "../node_modules/bootstrap/scss/tooltip";
+//@import "../node_modules/bootstrap/scss/popover";
+//@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/utilities.scss";
+//@import "../node_modules/bootstrap/scss/print";
 
-    filter: invert(1);
-
-    @include media-breakpoint-down(md) {
-      width: 225px;
-    }
-  }
-
-  .caption {
-    margin-bottom: .3rem;
-
-    font-size: 3.4rem;
-    text-transform: uppercase;
-
-    @include media-breakpoint-down(sm) {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-    }
-  }
-  p {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-  .social-media {
-    font-size: 2.3rem;
-    .fab {
-      margin: 15px;
-    }
-  }
-  a {
-    color: inherit;
-    &:hover {
-      color: $primary;
-    }
-  }
-}
-
-#cores {
-  @include media-breakpoint-down(sm) {
-    visibility: hidden;
-  }
-
-  @extend %flex-center;
-  height: 0;
-
-  .btn {
-    @include media-breakpoint-up(lg) {
-      width: 220px;
-      @include pad-x(3rem);
-
-      font-size: 1.5rem;
-    }
-
-    margin: 30px;
-    width: 180px;
-
-    text-transform: capitalize;
-    border-radius: 2rem;
-    border-top: 1px solid rgba(white, .4);
-    @include box-shadow(0 -5px 15px -5px rgba(black, .4));
-  }
-}
-
-#member {
-  @include box-shadow(inset 0 8px 30px -4px black);
-  @include gradient-directional(rgba($bg-dark, .9), rgba($bg-dark, 1), 90deg + 45deg);
-
-  padding-top: 150px;
-  padding-bottom: 100px;
-
-  //background-color: $bg-dark;
-  //background-color: white;
-  $text-color: white;
-  //color: rgba(black, .8);
-  .description {
-    padding: 0 40px;
-    h1 {
-      color: rgba($text-color, 1) !important;
-      margin-bottom: 30px;
-      //font-size: 2.6rem;
-    }
-
-    p {
-      color: rgba($text-color, 1);
-    }
-  }
-
-  .portraits {
-    margin-top: 95px;
-    padding: 0 40px;
-
-    text-align: center;
-    color: rgba($text-color, .6);
-    .portrait {
-      margin-bottom: 20px;
-      .name {
-        @extend h3;
-        margin-top: 8px;
-        margin-bottom: 0;
-        color: rgba($text-color, 1);
-      }
-
-      .fab {
-        margin: 10px 5px;
-        font-size: 1.3rem;
-      }
-      .row {
-        @extend .justify-content-center;
-        margin-bottom: 25px;
-      }
-      img {
-        margin-top: 3px;
-        max-width: 100%;
-        max-height: 100%;
-      }
-    }
-
-  }
-}
-
-#booking {
-  padding-top: 40px;
-  padding-bottom: 120px;
-  background: $bg-light;
-  .heading {
-    margin-bottom: 50px;
-    h4 {
-      color: rgba(black, .3);
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
-    hr {
-      background: rgba(black, .1);
-    }
-  }
-
-  .content {
-
-    color: black;
-
-    .video {
-      margin-top: 130px;
-    }
-  }
-}
-
-#events {
-  padding-top: 40px;
-  padding-bottom: 100px;
-
-  color: white;
-  @include gradient-directional(rgba($primary, 1), rgba($info, 1), 90deg + 45deg);
-  @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
-
-  .heading {
-    margin-bottom: 20px;
-    h4 {
-      color: rgba(white, .4);
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
-    hr {
-      background: rgba(white, .4);
-      @include box-shadow(0 -3px 8px 0px rgba(black, .25));
-    }
-  }
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-  p {
-    margin-top: 30px;
-  }
-  .camp {
-    margin-bottom: 100px;
-    .btn {
-      margin-left: 30px;
-    }
-
-    .slick-carousel {
-      margin-top: 50px;
-      .item {
-        height: 300px;
-        margin: 0 10px;
-      }
-    }
-  }
-  .battle {
-    margin-top: 30px;
-    img {
-      max-width: 400px;
-      max-height: 400px;
-      margin: 0 50px;
-      filter: invert(1);
-    }
-    .btn {
-      margin-right: 30px;
-    }
-  }
-}
-
-#footer {
-  background: $bg-dark;
-  color: rgba(white, .7);
-  padding: 30px 0;
-  .fab {
-    margin: 0 10px;
-  }
-
-  img {
-    width: 70px;
-    filter: invert(1);
-  }
-  .bordered {
-    border-left: 1px solid rgba(white, .3);
-    text-align: center;
-  }
-  .social-media {
-    text-align: right;
-  }
-}
-
-// global settings
-
-p {
-  font-size: 1.5rem;
-}
-
-h1 {
-  margin-bottom: 1.5rem;
-}
-
-.btn {
-  text-transform: uppercase;
-  border-radius: 2rem;
-  $pad: 1.5rem;
-  padding-left: $pad;
-  padding-right: $pad;
-  @include box-shadow(0 8px 10px -5px rgba(black, .4));
-}
-
-strong {
-  font-style: italic;
-  font-weight: 700;
-}
-
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none !important;
-  &:hover {
-    color: $primary;
-  }
-}
+@import "global";
+@import "sections";
