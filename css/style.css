@@ -1620,7 +1620,7 @@ button.bg-dark:focus {
   border-top-left-radius: 0.25rem !important;
   border-bottom-left-radius: 0.25rem !important; }
 
-.rounded-circle, #member .portraits .portrait img {
+.rounded-circle {
   border-radius: 50% !important; }
 
 .rounded-0 {
@@ -3456,7 +3456,7 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center; }
 
-#member .portraits .portrait img, #events .camp .key-visual, #events .battle .key-visual, #footer img {
+#events .camp .key-visual, #events .battle .key-visual, #footer img {
   width: 100%;
   margin: auto;
   display: block; }
@@ -3637,7 +3637,9 @@ section {
             margin-left: 12px;
             margin-right: 12px; } }
       #member .portraits .portrait img {
-        margin-top: 3px; }
+        width: 100%;
+        margin-top: 3px;
+        border-radius: 50% !important; }
 
 #booking {
   padding-bottom: 120px;
