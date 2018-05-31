@@ -196,29 +196,29 @@
     margin-bottom: 100px;
     .description {
       @include description(right, center);
-      .btn {
-        margin-left: 30px;
-      }
+    }
+    .key-visual {
+      @extend %responsive;
+      padding: $lg-middle-pad;
     }
     .slick-carousel {
       margin-top: 50px;
       .item {
         height: 300px;
-        margin: 0 10px;
+        @include margin-x(1px);
       }
     }
   }
 
   .battle {
-    @include description(left, center);
     margin-top: 30px;
-    img {
+    .key-visual {
       @extend %responsive;
-      padding: 30px;
+      padding: $lg-middle-pad;
       filter: invert(1);
     }
-    .btn {
-      margin-right: 30px;
+    .description {
+      @include description(left, center);
     }
   }
 }

@@ -18,8 +18,8 @@
   margin-bottom: $size;
 }
 
-@mixin description($align-lg, $align-sm) {
-  text-align: $align-lg;
+@mixin description($align-desktop, $align-mobile) {
+  text-align: $align-desktop;
   h1 {
     font-size: 3rem;
     margin-bottom: 0;
@@ -27,12 +27,29 @@
   p {
     margin-top: 30px;
   }
+  .btn {
+    @include margin-y(5px);
+  }
   @include media-breakpoint-up(lg) {
-    @if $align-lg == left {padding-left: $lg-middle-pad}
-    @if $align-lg == right {padding-right: $lg-middle-pad}
+    @if $align-desktop == left {
+      padding-left: $lg-middle-pad
+    }
+    @if $align-desktop == right {
+      padding-right: $lg-middle-pad
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .btn {
+      @if $align-desktop == left {
+        margin-right: 30px;
+      }
+      @if $align-desktop == right {
+        margin-left: 30px;
+      }
+    }
   }
   @include media-breakpoint-down(md) {
-    text-align: $align-sm !important;
+    text-align: $align-mobile !important;
   }
 }
 
@@ -76,6 +93,9 @@ h1 {
   padding-left: $pad;
   padding-right: $pad;
   @include box-shadow(0 8px 10px -5px rgba(black, .4));
+  .fab, .far {
+    margin-right: 5px;
+  }
 }
 
 strong {

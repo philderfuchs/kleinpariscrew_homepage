@@ -3456,7 +3456,7 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center; }
 
-#member .portraits .portrait img, #events .battle img {
+#member .portraits .portrait img, #events .camp .key-visual, #events .battle .key-visual {
   width: 100%; }
 
 p {
@@ -3471,6 +3471,8 @@ h1 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.4); }
+  .btn .fab, .btn .far {
+    margin-right: 5px; }
 
 strong {
   font-style: italic;
@@ -3584,9 +3586,15 @@ section {
       margin-bottom: 0; }
     #member .description p {
       margin-top: 30px; }
+    #member .description .btn {
+      margin-top: 5px;
+      margin-bottom: 5px; }
     @media (min-width: 992px) {
       #member .description {
-        padding-right: 40px; } }
+        padding-right: 35px; } }
+    @media (min-width: 768px) {
+      #member .description .btn {
+        margin-left: 30px; } }
     @media (max-width: 991.98px) {
       #member .description {
         text-align: center !important; } }
@@ -3596,7 +3604,7 @@ section {
     color: rgba(255, 255, 255, 0.6); }
     @media (min-width: 992px) {
       #member .portraits {
-        padding-left: 40px; } }
+        padding-left: 35px; } }
     #member .portraits .portrait {
       margin-bottom: 20px; }
       @media (max-width: 767.98px) {
@@ -3644,9 +3652,15 @@ section {
         margin-bottom: 0; }
       #booking .content .description p {
         margin-top: 30px; }
+      #booking .content .description .btn {
+        margin-top: 5px;
+        margin-bottom: 5px; }
       @media (min-width: 992px) {
         #booking .content .description {
-          padding-left: 40px; } }
+          padding-left: 35px; } }
+      @media (min-width: 768px) {
+        #booking .content .description .btn {
+          margin-right: 30px; } }
       @media (max-width: 991.98px) {
         #booking .content .description {
           text-align: left !important; } }
@@ -3654,7 +3668,7 @@ section {
       margin-top: 130px; }
       @media (min-width: 992px) {
         #booking .content .video {
-          padding-right: 40px; } }
+          padding-right: 35px; } }
       @media (max-width: 991.98px) {
         #booking .content .video {
           margin-top: 70px; } }
@@ -3685,38 +3699,50 @@ section {
         margin-bottom: 0; }
       #events .camp .description p {
         margin-top: 30px; }
+      #events .camp .description .btn {
+        margin-top: 5px;
+        margin-bottom: 5px; }
       @media (min-width: 992px) {
         #events .camp .description {
-          padding-right: 40px; } }
+          padding-right: 35px; } }
+      @media (min-width: 768px) {
+        #events .camp .description .btn {
+          margin-left: 30px; } }
       @media (max-width: 991.98px) {
         #events .camp .description {
           text-align: center !important; } }
-      #events .camp .description .btn {
-        margin-left: 30px; }
+    #events .camp .key-visual {
+      padding: 35px; }
     #events .camp .slick-carousel {
       margin-top: 50px; }
       #events .camp .slick-carousel .item {
         height: 300px;
-        margin: 0 10px; }
+        margin-left: 1px;
+        margin-right: 1px; }
   #events .battle {
-    text-align: left;
     margin-top: 30px; }
-    #events .battle h1 {
-      font-size: 3rem;
-      margin-bottom: 0; }
-    #events .battle p {
-      margin-top: 30px; }
-    @media (min-width: 992px) {
-      #events .battle {
-        padding-left: 40px; } }
-    @media (max-width: 991.98px) {
-      #events .battle {
-        text-align: center !important; } }
-    #events .battle img {
-      padding: 30px;
+    #events .battle .key-visual {
+      padding: 35px;
       filter: invert(1); }
-    #events .battle .btn {
-      margin-right: 30px; }
+    #events .battle .description {
+      text-align: left; }
+      #events .battle .description h1 {
+        font-size: 3rem;
+        margin-bottom: 0; }
+      #events .battle .description p {
+        margin-top: 30px; }
+      #events .battle .description .btn {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      @media (min-width: 992px) {
+        #events .battle .description {
+          padding-left: 35px; } }
+      @media (min-width: 768px) {
+        #events .battle .description .btn {
+          margin-right: 30px; } }
+      @media (max-width: 991.98px) {
+        #events .battle .description {
+          text-align: center !important; } }
 
 #footer {
   background: #110726;
