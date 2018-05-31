@@ -19,6 +19,10 @@
     @include media-breakpoint-down(md) {
       width: 225px;
     }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+    }
   }
 
   .caption {
