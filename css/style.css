@@ -3456,8 +3456,10 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center; }
 
-#member .portraits .portrait img, #events .camp .key-visual, #events .battle .key-visual {
-  width: 100%; }
+#member .portraits .portrait img, #events .camp .key-visual, #events .battle .key-visual, #footer img {
+  width: 100%;
+  margin: auto;
+  display: block; }
 
 p {
   font-size: 1.5rem; }
@@ -3587,8 +3589,8 @@ section {
     #member .description p {
       margin-top: 30px; }
     #member .description .btn {
-      margin-top: 5px;
-      margin-bottom: 5px; }
+      margin-top: 7px;
+      margin-bottom: 7px; }
     @media (min-width: 992px) {
       #member .description {
         padding-right: 35px; } }
@@ -3653,8 +3655,8 @@ section {
       #booking .content .description p {
         margin-top: 30px; }
       #booking .content .description .btn {
-        margin-top: 5px;
-        margin-bottom: 5px; }
+        margin-top: 7px;
+        margin-bottom: 7px; }
       @media (min-width: 992px) {
         #booking .content .description {
           padding-left: 35px; } }
@@ -3700,8 +3702,8 @@ section {
       #events .camp .description p {
         margin-top: 30px; }
       #events .camp .description .btn {
-        margin-top: 5px;
-        margin-bottom: 5px; }
+        margin-top: 7px;
+        margin-bottom: 7px; }
       @media (min-width: 992px) {
         #events .camp .description {
           padding-right: 35px; } }
@@ -3732,8 +3734,8 @@ section {
       #events .battle .description p {
         margin-top: 30px; }
       #events .battle .description .btn {
-        margin-top: 5px;
-        margin-bottom: 5px; }
+        margin-top: 7px;
+        margin-bottom: 7px; }
       @media (min-width: 992px) {
         #events .battle .description {
           padding-left: 35px; } }
@@ -3748,13 +3750,18 @@ section {
   background: #110726;
   color: rgba(255, 255, 255, 0.7);
   padding: 30px 0; }
+  @media (max-width: 991.98px) {
+    #footer {
+      font-size: 1.5rem; } }
+  #footer .row > * {
+    margin-top: 5px;
+    margin-bottom: 5px; }
   #footer .fab {
     margin: 0 10px; }
   #footer img {
-    width: 70px;
+    max-width: 170px;
     filter: invert(1); }
   #footer .bordered {
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center; }
   #footer .social-media {
-    text-align: right; }
+    text-align: center; }

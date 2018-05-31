@@ -28,7 +28,7 @@
     margin-top: 30px;
   }
   .btn {
-    @include margin-y(5px);
+    @include margin-y(7px);
   }
   @include media-breakpoint-up(lg) {
     @if $align-desktop == left {
@@ -76,6 +76,8 @@
 
 %responsive {
   width: 100%;
+  margin: auto;
+  display: block;
 }
 
 p {
