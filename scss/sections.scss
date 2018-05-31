@@ -58,6 +58,10 @@
   @include media-breakpoint-down(sm) {
     visibility: hidden;
   }
+  @include media-breakpoint-up(md) {
+    overflow: visible;
+    z-index: 1;
+  }
 
   @extend %flex-center;
   height: 0;

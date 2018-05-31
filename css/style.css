@@ -3545,6 +3545,10 @@ section {
   @media (max-width: 767.98px) {
     #cores {
       visibility: hidden; } }
+  @media (min-width: 768px) {
+    #cores {
+      overflow: visible;
+      z-index: 1; } }
   #cores .btn {
     margin: 30px;
     width: 180px;
