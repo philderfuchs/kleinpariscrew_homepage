@@ -17,6 +17,10 @@
     filter: invert(1);
 
     @include media-breakpoint-down(md) {
+      width: 400px;
+    }
+
+    @include media-breakpoint-down(sm) {
       width: 225px;
     }
 
@@ -93,7 +97,7 @@
   padding-top: 150px;
   padding-bottom: 100px;
 
-  $text-color: white;
+  color: white;
   @include box-shadow(inset 0 8px 30px -4px black);
   @include gradient-directional(rgba($bg-dark, .9), rgba($bg-dark, 1), 90deg + 45deg);
 
@@ -103,7 +107,6 @@
   }
 
   .description {
-    color: white;
     @include description(right, center);
   }
 
@@ -113,37 +116,43 @@
       padding-left: $lg-middle-pad;
     }
 
-    text-align: center;
-    color: rgba($text-color, .6);
     .portrait {
       margin-bottom: 20px;
+      text-align: center;
+      color: rgba(white, .6);
+
       @include media-breakpoint-down(sm) {
         margin-bottom: 50px;
       }
       .name {
-        @extend h3;
         margin-top: 8px;
         margin-bottom: 0;
-        color: rgba($text-color, 1);
-        @include media-breakpoint-down(md) {
-          font-size: 2.5rem;
+        font-size: 1.5rem;
+        font-family: $headings-font-family;
+        color: rgba(white, 1);
+        @include media-breakpoint-down(sm) {
+          font-size: 1.8rem;
         }
       }
-      .style {
-        @include media-breakpoint-down(md) {
-          font-size: 2rem;
+      .style{
+        @include media-breakpoint-down(sm) {
+          border-bottom: 1px solid rgba(white, .1);
         }
       }
 
       .fab {
         margin: 10px 5px;
         font-size: 1.3rem;
-        @include media-breakpoint-down(md) {
-          font-size: 2rem;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 1.8rem;
+          margin-top: 20px;
+          @include margin-x(12px);
         }
       }
       img {
         @extend %responsive;
+        @extend .rounded-circle;
         margin-top: 3px;
 
       }

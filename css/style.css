@@ -73,7 +73,7 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, h3, #member .portraits .portrait .name, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -298,7 +298,7 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, h3, #member .portraits .portrait .name, h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: "Barlow", sans-serif;
@@ -312,7 +312,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 2rem; }
 
-h3, #member .portraits .portrait .name, .h3 {
+h3, .h3 {
   font-size: 1.75rem; }
 
 h4, .h4 {
@@ -1620,7 +1620,7 @@ button.bg-dark:focus {
   border-top-left-radius: 0.25rem !important;
   border-bottom-left-radius: 0.25rem !important; }
 
-.rounded-circle {
+.rounded-circle, #member .portraits .portrait img {
   border-radius: 50% !important; }
 
 .rounded-0 {
@@ -3519,6 +3519,9 @@ section {
     filter: invert(1); }
     @media (max-width: 991.98px) {
       #header .logo {
+        width: 400px; } }
+    @media (max-width: 767.98px) {
+      #header .logo {
         width: 225px; } }
     @media (max-width: 767.98px) {
       #header .logo {
@@ -3573,6 +3576,7 @@ section {
 #member {
   padding-top: 150px;
   padding-bottom: 100px;
+  color: white;
   box-shadow: inset 0 8px 30px -4px black;
   background-image: linear-gradient(135deg, rgba(17, 7, 38, 0.9), #110726);
   background-repeat: repeat-x; }
@@ -3581,7 +3585,6 @@ section {
       padding-top: 50px;
       padding-bottom: 50px; } }
   #member .description {
-    color: white;
     text-align: right; }
     #member .description h1 {
       font-size: 3rem;
@@ -3601,33 +3604,38 @@ section {
       #member .description {
         text-align: center !important; } }
   #member .portraits {
-    margin-top: 95px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6); }
+    margin-top: 95px; }
     @media (min-width: 992px) {
       #member .portraits {
         padding-left: 35px; } }
     #member .portraits .portrait {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6); }
       @media (max-width: 767.98px) {
         #member .portraits .portrait {
           margin-bottom: 50px; } }
       #member .portraits .portrait .name {
         margin-top: 8px;
         margin-bottom: 0;
+        font-size: 1.5rem;
+        font-family: "Barlow", sans-serif;
         color: white; }
-        @media (max-width: 991.98px) {
+        @media (max-width: 767.98px) {
           #member .portraits .portrait .name {
-            font-size: 2.5rem; } }
-      @media (max-width: 991.98px) {
+            font-size: 1.8rem; } }
+      @media (max-width: 767.98px) {
         #member .portraits .portrait .style {
-          font-size: 2rem; } }
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }
       #member .portraits .portrait .fab {
         margin: 10px 5px;
         font-size: 1.3rem; }
-        @media (max-width: 991.98px) {
+        @media (max-width: 767.98px) {
           #member .portraits .portrait .fab {
-            font-size: 2rem; } }
+            font-size: 1.8rem;
+            margin-top: 20px;
+            margin-left: 12px;
+            margin-right: 12px; } }
       #member .portraits .portrait img {
         margin-top: 3px; }
 
