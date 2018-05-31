@@ -1,3 +1,65 @@
+@mixin pad-x($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
+@mixin pad-y($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}
+
+@mixin margin-x($size) {
+  margin-left: $size;
+  margin-right: $size;
+}
+
+@mixin margin-y($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+@mixin description($align-lg, $align-sm) {
+  text-align: $align-lg;
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    @if $align-lg == left {padding-left: $lg-middle-pad}
+    @if $align-lg == right {padding-right: $lg-middle-pad}
+  }
+  @include media-breakpoint-down(md) {
+    text-align: $align-sm !important;
+  }
+}
+
+@mixin section-heading($text-color, $shadow-color) {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  h4 {
+    color: $text-color;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  hr {
+    background: $text-color;
+    @include box-shadow(0 -3px 8px 0px $shadow-color);
+  }
+
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%responsive {
+  width: 100%;
+}
 
 p {
   font-size: 1.5rem;

@@ -15,33 +15,3 @@ $enable-shadows: true;
 $font-weight-normal: 300;
 
 $lg-middle-pad: 40px;
-
-@mixin pad-x($size) {
-  padding-left: $size;
-  padding-right: $size;
-}
-
-@mixin pad-y($size) {
-  padding-top: $size;
-  padding-bottom: $size;
-}
-
-@mixin margin-x($size) {
-  margin-left: $size;
-  margin-right: $size;
-}
-
-@mixin margin-y($size) {
-  margin-top: $size;
-  margin-bottom: $size;
-}
-
-%flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-%responsive {
-  width: 100%;
-}

@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
-#header, #cores {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#member .portraits .portrait img, #events .battle img {
-  width: 100%; }
-
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -3459,6 +3451,14 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
+#header, #cores {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#member .portraits .portrait img, #events .battle img {
+  width: 100%; }
+
 p {
   font-size: 1.5rem; }
 
@@ -3526,7 +3526,7 @@ section {
     @media (max-width: 767.98px) {
       #header .caption {
         font-size: 1.5rem;
-        margin-bottom: 30px; } }
+        margin-bottom: 5px; } }
   #header .description {
     text-align: center;
     font-size: 1.6rem;
@@ -3572,18 +3572,24 @@ section {
   box-shadow: inset 0 8px 30px -4px black;
   background-image: linear-gradient(135deg, rgba(17, 7, 38, 0.9), #110726);
   background-repeat: repeat-x; }
-  @media (min-width: 992px) {
-    #member .description {
-      padding-right: 40px;
-      text-align: right; } }
-  @media (max-width: 991.98px) {
-    #member .description {
-      text-align: center; } }
-  #member .description h1 {
-    color: white !important;
-    margin-bottom: 30px; }
-  #member .description p {
-    color: white; }
+  @media (max-width: 767.98px) {
+    #member {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  #member .description {
+    color: white;
+    text-align: right; }
+    #member .description h1 {
+      font-size: 3rem;
+      margin-bottom: 0; }
+    #member .description p {
+      margin-top: 30px; }
+    @media (min-width: 992px) {
+      #member .description {
+        padding-right: 40px; } }
+    @media (max-width: 991.98px) {
+      #member .description {
+        text-align: center !important; } }
   #member .portraits {
     margin-top: 95px;
     text-align: center;
@@ -3616,19 +3622,34 @@ section {
         margin-top: 3px; }
 
 #booking {
-  padding-top: 40px;
   padding-bottom: 120px;
   background: #F8F5FF; }
   #booking .section-heading {
-    margin-bottom: 50px; }
+    margin-top: 40px;
+    margin-bottom: 20px; }
     #booking .section-heading h4 {
       color: rgba(0, 0, 0, 0.3);
       text-transform: uppercase;
       margin-bottom: 0; }
     #booking .section-heading hr {
-      background: rgba(0, 0, 0, 0.1); }
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 -3px 8px 0px white; }
   #booking .content {
-    color: black; }
+    color: black;
+    margin-top: 40px; }
+    #booking .content .description {
+      text-align: left; }
+      #booking .content .description h1 {
+        font-size: 3rem;
+        margin-bottom: 0; }
+      #booking .content .description p {
+        margin-top: 30px; }
+      @media (min-width: 992px) {
+        #booking .content .description {
+          padding-left: 40px; } }
+      @media (max-width: 991.98px) {
+        #booking .content .description {
+          text-align: left !important; } }
     #booking .content .video {
       margin-top: 130px; }
       @media (min-width: 992px) {
@@ -3637,18 +3658,16 @@ section {
       @media (max-width: 991.98px) {
         #booking .content .video {
           margin-top: 70px; } }
-    @media (min-width: 992px) {
-      #booking .content .description {
-        padding-left: 40px; } }
 
 #events {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 100px;
   color: white;
   background-image: linear-gradient(135deg, #ff3275, #6d26ff);
   background-repeat: repeat-x;
   box-shadow: inset 0 8px 30px -4px rgba(0, 0, 0, 0.5); }
   #events .section-heading {
+    margin-top: 40px;
     margin-bottom: 20px; }
     #events .section-heading h4 {
       color: rgba(255, 255, 255, 0.4);
@@ -3657,15 +3676,21 @@ section {
     #events .section-heading hr {
       background: rgba(255, 255, 255, 0.4);
       box-shadow: 0 -3px 8px 0px rgba(0, 0, 0, 0.25); }
-  #events h1 {
-    font-size: 3rem;
-    margin-bottom: 0; }
-  #events p {
-    margin-top: 30px; }
   #events .camp {
     margin-bottom: 100px; }
     #events .camp .description {
       text-align: right; }
+      #events .camp .description h1 {
+        font-size: 3rem;
+        margin-bottom: 0; }
+      #events .camp .description p {
+        margin-top: 30px; }
+      @media (min-width: 992px) {
+        #events .camp .description {
+          padding-right: 40px; } }
+      @media (max-width: 991.98px) {
+        #events .camp .description {
+          text-align: center !important; } }
       #events .camp .description .btn {
         margin-left: 30px; }
     #events .camp .slick-carousel {
@@ -3674,15 +3699,24 @@ section {
         height: 300px;
         margin: 0 10px; }
   #events .battle {
+    text-align: left;
     margin-top: 30px; }
+    #events .battle h1 {
+      font-size: 3rem;
+      margin-bottom: 0; }
+    #events .battle p {
+      margin-top: 30px; }
+    @media (min-width: 992px) {
+      #events .battle {
+        padding-left: 40px; } }
+    @media (max-width: 991.98px) {
+      #events .battle {
+        text-align: center !important; } }
     #events .battle img {
       padding: 30px;
       filter: invert(1); }
     #events .battle .btn {
       margin-right: 30px; }
-  @media (max-width: 991.98px) {
-    #events .description {
-      text-align: center !important; } }
 
 #footer {
   background: #110726;

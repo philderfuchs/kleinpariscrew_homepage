@@ -33,7 +33,7 @@
 
     @include media-breakpoint-down(sm) {
       font-size: 1.5rem;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
     }
   }
   .description {
@@ -97,21 +97,14 @@
   @include box-shadow(inset 0 8px 30px -4px black);
   @include gradient-directional(rgba($bg-dark, .9), rgba($bg-dark, 1), 90deg + 45deg);
 
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .description {
-    @include media-breakpoint-up(lg) {
-      padding-right: $lg-middle-pad;
-      text-align: right;
-    }
-    @include media-breakpoint-down(md) {
-      text-align: center;
-    }
-    h1 {
-      color: rgba($text-color, 1) !important;
-      margin-bottom: 30px;
-    }
-    p {
-      color: rgba($text-color, 1);
-    }
+    color: white;
+    @include description(right, center);
   }
 
   .portraits {
@@ -160,24 +153,19 @@
 }
 
 #booking {
-  padding-top: 40px;
   padding-bottom: 120px;
   background: $bg-light;
+
   .section-heading {
-    margin-bottom: 50px;
-    h4 {
-      color: rgba(black, .3);
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
-    hr {
-      background: rgba(black, .1);
-    }
+    @include section-heading(rgba(black, .3), rgba(white, 1));
   }
 
   .content {
-
     color: black;
+    margin-top: 40px;
+    .description {
+      @include description(left, left);
+    }
 
     .video {
       @include media-breakpoint-up(lg) {
@@ -187,18 +175,13 @@
       @include media-breakpoint-down(md) {
         margin-top: 70px;
       }
+    }
 
-    }
-    .description {
-      @include media-breakpoint-up(lg) {
-        padding-left: $lg-middle-pad;
-      }
-    }
   }
 }
 
 #events {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 100px;
 
   color: white;
@@ -206,33 +189,17 @@
   @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
 
   .section-heading {
-    margin-bottom: 20px;
-    h4 {
-      color: rgba(white, .4);
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
-    hr {
-      background: rgba(white, .4);
-      @include box-shadow(0 -3px 8px 0px rgba(black, .25));
-    }
+    @include section-heading(rgba(white, .4), rgba(black, .25));
   }
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-  p {
-    margin-top: 30px;
-  }
+
   .camp {
     margin-bottom: 100px;
     .description {
-      text-align: right;
+      @include description(right, center);
       .btn {
         margin-left: 30px;
       }
     }
-
     .slick-carousel {
       margin-top: 50px;
       .item {
@@ -241,7 +208,9 @@
       }
     }
   }
+
   .battle {
+    @include description(left, center);
     margin-top: 30px;
     img {
       @extend %responsive;
@@ -250,11 +219,6 @@
     }
     .btn {
       margin-right: 30px;
-    }
-  }
-  .description {
-    @include media-breakpoint-down(md) {
-      text-align: center !important;
     }
   }
 }
