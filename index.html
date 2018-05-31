@@ -31,7 +31,7 @@
             <div class="col-lg-7">
                 <!--<div class="test">Zum Sommercamp anmelden!</div>-->
 
-                <p class="description">
+                <p class="subcaption">
                     Popping, Locking, Hip Hop & Co:
                     Wir gestalten Leipzigs Urbane Tanzszene als aktive Freestylecrew.
                 </p>
@@ -381,18 +381,49 @@
             arrows: false,
             autoplay: true
         });
-        new Rellax('#header');
+
+
+        new Rellax('#member .description', {
+            center: true,
+            speed: -.5
+        });
+
+        new Rellax('#booking .description', {
+            center: true,
+            speed: -.5
+        });
+
+        new Rellax('.portraits', {
+            center: true,
+            speed: .5
+        });
+
+        new Rellax('.video', {
+            center: true,
+            speed: .5
+        });
 
         window.sr = ScrollReveal({
             scale: 1.0
         });
-        sr.reveal('.portraits', {
-            duration: 1000
+        var fastReveal = 1000;
+        var slowReveal = 3000;
+        sr.reveal('#header .logo', {
+            duration: fastReveal
+        });
+        sr.reveal('#header .caption', {
+            duration: slowReveal
+        });
+        sr.reveal('#header .subcaption', {
+            duration: slowReveal
+        });
+        sr.reveal('#header .social-media', {
+            duration: slowReveal
         });
         sr.reveal('.key-visual', {
-            duration: 1000
+            duration: fastReveal
         });
-        sr.reveal('.description');
+        sr.reveal('#events .description');
 
     });
 </script>

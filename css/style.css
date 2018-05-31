@@ -3554,12 +3554,12 @@ section {
       #header .caption {
         font-size: 1.5rem;
         margin-bottom: 5px; } }
-  #header .description {
+  #header .subcaption {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 500; }
     @media (max-width: 767.98px) {
-      #header .description {
+      #header .subcaption {
         font-size: 1.3rem; } }
   #header .social-media {
     text-align: center;
