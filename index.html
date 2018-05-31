@@ -16,9 +16,17 @@
 <body>
 
 <section id="header">
-    <img class="logo" src="img/kleinparis.png"/>
-    <h1 class="caption"><strong>Urban Dance.</strong> Aus Leipzig.</h1>
     <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="logo" src="img/kleinparis.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="caption"><strong>Urban Dance.</strong> Aus Leipzig.</h1>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <!--<div class="test">Zum Sommercamp anmelden!</div>-->
@@ -29,12 +37,16 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="social-media">
-        <a href="https://www.facebook.com/kleinPariser/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://soundcloud.com/philipp-anders-7" target="_blank"><i class="fab fa-soundcloud"></i></a>
-        <a href="https://www.instagram.com/kleinparis_fam/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/user/sheaker1988" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="row">
+            <div class="col social-media">
+                <a href="https://www.facebook.com/kleinPariser/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://soundcloud.com/philipp-anders-7" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                <a href="https://www.instagram.com/kleinparis_fam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/sheaker1988" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -353,6 +365,9 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -366,6 +381,19 @@
             arrows: false,
             autoplay: true
         });
+        new Rellax('#header');
+
+        window.sr = ScrollReveal({
+            scale: 1.0
+        });
+        sr.reveal('.portraits', {
+            duration: 1000
+        });
+        sr.reveal('.key-visual', {
+            duration: 1000
+        });
+        sr.reveal('.description');
+
     });
 </script>
 </body>
