@@ -3831,6 +3831,7 @@ section {
   #training .entries hr {
     width: 70%; }
   #training .entries .entry {
+    height: 100px;
     margin-bottom: 40px;
     align-items: center; }
   #training .entries .time {
