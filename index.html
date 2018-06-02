@@ -12,33 +12,36 @@
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js"></script>
+    <script src="js/app.js"></script>
+
 </head>
 <body>
 
 <section id="header">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col logo-container">
                 <img class="logo" src="img/kleinparis.png"/>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <h1 class="caption"><strong>Urban Dance.</strong> Aus Leipzig.</h1>
-            </div>
-        </div>
         <div class="row justify-content-center">
-            <div class="col-lg-7">
+            <div class="col-xl-8 col-lg-9 caption-container">
+                <h1 class="caption"><strong>Urban Dance.</strong> Aus Leipzig.</h1>
                 <!--<div class="test">Zum Sommercamp anmelden!</div>-->
 
                 <p class="subcaption">
                     Popping, Locking, Hip Hop & Co:
-                    Wir gestalten Leipzigs Urbane Tanzszene als aktive Freestylecrew.
+                    Wir gestalten die Urbane Tanzszene in Leipzig als aktive Freestylecrew.
                 </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col social-media">
+
+            <div class="social-media">
                 <a href="https://www.facebook.com/kleinPariser/" target="_blank"><i
                         class="fab fa-facebook-f"></i></a>
                 <a href="https://soundcloud.com/philipp-anders-7" target="_blank"><i class="fab fa-soundcloud"></i></a>
@@ -359,83 +362,5 @@
         </div>
     </div>
 </section>
-
-<script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js"></script>
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.camp .slick-carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 400,
-            // slidesToShow: 2,
-            // centerMode: true,
-            variableWidth: true,
-            arrows: false,
-            autoplay: true
-        });
-        var upSpeed = .3;
-        var downSpeed = -.3;
-        // new Rellax('#header', {
-        //     center: true
-        // });
-
-        new Rellax('#member .description', {
-            center: true,
-            speed: downSpeed
-        });
-
-        new Rellax('#booking .description', {
-            center: true,
-            speed: downSpeed
-        });
-
-        new Rellax('.portraits', {
-            center: true,
-            speed: upSpeed
-        });
-
-        new Rellax('.video', {
-            center: true,
-            speed: upSpeed
-        });
-
-        window.sr = ScrollReveal({
-            scale: 1.0
-        });
-        var fastReveal = 1000;
-        var slowReveal = 2000;
-        sr.reveal('#header .logo', {
-            duration: fastReveal,
-            reset: true
-        });
-        sr.reveal('#header .caption', {
-            duration: slowReveal,
-            reset: true
-        });
-        sr.reveal('#header .subcaption', {
-            duration: slowReveal,
-            reset: true
-        });
-        sr.reveal('#header .social-media', {
-            duration: slowReveal,
-            reset: true
-        });
-        sr.reveal('.key-visual', {
-            duration: fastReveal
-        });
-        sr.reveal('#events .description');
-        sr.reveal('.slick-carousel', {
-            duration: fastReveal
-        });
-    });
-</script>
 </body>
 </html>

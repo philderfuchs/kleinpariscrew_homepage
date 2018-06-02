@@ -27,59 +27,68 @@
   background-size: cover;
   background-position: center;
 
-  .logo {
-    width: 300px;
+  @include media-breakpoint-down(sm) {
+    height: 100vh;
+  }
+
+  .logo-container {
     margin-top: 130px;
     margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-
-    filter: invert(1);
-
-    @include media-breakpoint-down(md) {
-      width: 400px;
-    }
-
-    @include media-breakpoint-down(sm) {
-      width: 225px;
-    }
+    text-align: center;
 
     @include media-breakpoint-down(sm) {
       margin-top: 30px;
     }
-  }
+    .logo {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      //display: block;
 
-  .caption {
-    margin-bottom: .3rem;
-    font-size: 3.4rem;
-    text-transform: uppercase;
-    text-align: center;
+      filter: invert(1);
 
-    @include media-breakpoint-down(sm) {
-      font-size: 1.5rem;
-      margin-bottom: 5px;
+      @include media-breakpoint-down(md) {
+        width: 400px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 225px;
+      }
     }
   }
-  .subcaption {
+  .caption-container {
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 500;
-    @include media-breakpoint-down(sm) {
-      font-size: 1.3rem;
+    .caption {
+      margin-bottom: .3rem;
+      font-size: 3.4rem;
+      text-transform: uppercase;
+      //text-align: center;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+      }
     }
-  }
-  .social-media {
-    text-align: center;
-    font-size: 2.3rem;
-    .fab {
-      margin: 15px;
+    .subcaption {
+      font-size: 1.6rem;
+      font-weight: 500;
+      @include pad-x(20px);
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+        font-size: 1.3rem;
+      }
     }
-  }
-  a {
-    color: inherit;
-    &:hover {
-      color: $primary;
+    .social-media {
+      font-size: 2.3rem;
+      .fab {
+        margin: 15px;
+      }
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }
@@ -122,7 +131,7 @@
 
   color: white;
   @include box-shadow(inset 0 8px 30px -4px black);
-  @include gradient-directional(lighten($bg-dark, 7%), $bg-dark, 90deg + 45deg);
+  @include gradient-directional(#221C3D, $bg-dark, 90deg + 45deg);
 
   @include media-breakpoint-down(sm) {
     padding-top: 50px;
@@ -157,7 +166,7 @@
           font-size: 1.8rem;
         }
       }
-      .style{
+      .style {
         @include media-breakpoint-down(sm) {
           border-bottom: 1px solid rgba(white, .1);
         }
