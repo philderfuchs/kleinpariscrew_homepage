@@ -299,15 +299,14 @@
   padding-bottom: 150px;
   background: $bg-light;
   color: black;
+  @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
+
   .section-heading {
     @include section-heading(rgba(black, .4), white);
     padding-bottom: 70px;
   }
-  .weekdays {
-    & > * {
-      text-align: center;
-      @extend h5;
-    }
+  .weekday {
+    text-align: center;
     padding-bottom: 20px;
   }
 
