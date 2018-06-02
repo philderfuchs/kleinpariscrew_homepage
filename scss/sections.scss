@@ -293,3 +293,51 @@
     text-align: center;
   }
 }
+
+#training {
+  padding-top: 20px;
+  padding-bottom: 150px;
+  background: $bg-light;
+  color: black;
+  .section-heading {
+    @include section-heading(rgba(black, .4), white);
+    padding-bottom: 70px;
+  }
+  .weekdays {
+    & > * {
+      text-align: center;
+      @extend h5;
+    }
+    padding-bottom: 20px;
+  }
+
+  .entries {
+    hr {
+      width: 70%;
+    }
+    //text-align: center;
+    .entry {
+      margin-bottom: 40px;
+      align-items: center;
+    }
+    .time {
+      color: rgba(black, .6);
+      //font-weight: bold;
+    }
+    .title {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+    .location {
+      font-size: .8rem;
+      margin-top: 15px;
+      display: inline-block;
+      padding: 2px 9px;
+
+      background: rgba(black, .4);
+      color: rgba(white, .9);
+      border-radius: 2px;
+    }
+  }
+}
