@@ -21,7 +21,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #FF3275;
-  --secondary: #0FF0A9;
+  --secondary: #00CF9C;
   --success: #28a745;
   --info: #6D26FF;
   --warning: #ffc107;
@@ -1065,28 +1065,28 @@ fieldset:disabled a.btn {
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(255, 50, 117, 0.5); }
 
 .btn-secondary {
-  color: #212529;
-  background-color: #0FF0A9;
-  border-color: #0FF0A9;
+  color: #fff;
+  background-color: #00CF9C;
+  border-color: #00CF9C;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075); }
   .btn-secondary:hover {
     color: #fff;
-    background-color: #0dcc90;
-    border-color: #0cc087; }
+    background-color: #00a97f;
+    border-color: #009c76; }
   .btn-secondary:focus, .btn-secondary.focus {
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(15, 240, 169, 0.5); }
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(0, 207, 156, 0.5); }
   .btn-secondary.disabled, .btn-secondary:disabled {
-    color: #212529;
-    background-color: #0FF0A9;
-    border-color: #0FF0A9; }
+    color: #fff;
+    background-color: #00CF9C;
+    border-color: #00CF9C; }
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
   .show > .btn-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #0cc087;
-    border-color: #0bb47f; }
+    background-color: #009c76;
+    border-color: #008f6c; }
     .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-secondary.dropdown-toggle:focus {
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(15, 240, 169, 0.5); }
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(0, 207, 156, 0.5); }
 
 .btn-success {
   color: #fff;
@@ -1256,27 +1256,27 @@ fieldset:disabled a.btn {
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(255, 50, 117, 0.5); }
 
 .btn-outline-secondary {
-  color: #0FF0A9;
+  color: #00CF9C;
   background-color: transparent;
   background-image: none;
-  border-color: #0FF0A9; }
+  border-color: #00CF9C; }
   .btn-outline-secondary:hover {
-    color: #212529;
-    background-color: #0FF0A9;
-    border-color: #0FF0A9; }
+    color: #fff;
+    background-color: #00CF9C;
+    border-color: #00CF9C; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(15, 240, 169, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(0, 207, 156, 0.5); }
   .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-    color: #0FF0A9;
+    color: #00CF9C;
     background-color: transparent; }
   .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-secondary.dropdown-toggle {
-    color: #212529;
-    background-color: #0FF0A9;
-    border-color: #0FF0A9; }
+    color: #fff;
+    background-color: #00CF9C;
+    border-color: #00CF9C; }
     .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-secondary.dropdown-toggle:focus {
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(15, 240, 169, 0.5); }
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(0, 207, 156, 0.5); }
 
 .btn-outline-success {
   color: #28a745;
@@ -1483,12 +1483,12 @@ button.bg-primary:focus {
   background-color: #fe0053 !important; }
 
 .bg-secondary {
-  background-color: #0FF0A9 !important; }
+  background-color: #00CF9C !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #0cc087 !important; }
+  background-color: #009c76 !important; }
 
 .bg-success {
   background-color: #28a745 !important; }
@@ -1578,7 +1578,7 @@ button.bg-dark:focus {
   border-color: #FF3275 !important; }
 
 .border-secondary {
-  border-color: #0FF0A9 !important; }
+  border-color: #00CF9C !important; }
 
 .border-success {
   border-color: #28a745 !important; }
@@ -3385,10 +3385,10 @@ a.text-primary:hover, a.text-primary:focus {
   color: #fe0053 !important; }
 
 .text-secondary {
-  color: #0FF0A9 !important; }
+  color: #00CF9C !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #0cc087 !important; }
+  color: #009c76 !important; }
 
 .text-success {
   color: #28a745 !important; }
