@@ -442,7 +442,7 @@ mark,
   margin-right: auto;
   margin-left: auto; }
 
-.row, #training .weekday .entry {
+.row, #training .weekday .entry, #training .weekday .entry-small {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -459,7 +459,7 @@ mark,
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #training .weekday .entry-container, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, #training .weekday .entry .avatar-container, .col-lg-6, .col-lg-7, #training .weekday .entry .description, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, #training .weekday .entry-small .avatar-container, .col-lg-5, #training .weekday .entry .avatar-container, .col-lg-6, .col-lg-7, #training .weekday .entry .description, .col-lg-8, #training .weekday .entry-small .description, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
   position: relative;
@@ -822,7 +822,7 @@ mark,
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-lg-4 {
+  .col-lg-4, #training .weekday .entry-small .avatar-container {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-lg-5, #training .weekday .entry .avatar-container {
@@ -834,7 +834,7 @@ mark,
   .col-lg-7, #training .weekday .entry .description {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  .col-lg-8 {
+  .col-lg-8, #training .weekday .entry-small .description {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
   .col-lg-9 {
@@ -3795,7 +3795,7 @@ section {
   @media (max-width: 991.98px) {
     #footer {
       font-size: 1.5rem; } }
-  #footer .row > *, #footer #training .weekday .entry > *, #training .weekday #footer .entry > * {
+  #footer .row > *, #footer #training .weekday .entry > *, #training .weekday #footer .entry > *, #footer #training .weekday .entry-small > *, #training .weekday #footer .entry-small > * {
     margin-top: 5px;
     margin-bottom: 5px; }
   #footer .fab {
@@ -3831,35 +3831,39 @@ section {
     text-align: center;
     padding-bottom: 20px; }
   #training .weekday .entry-container {
-    margin-bottom: 30px;
     text-align: center; }
     @media (min-width: 992px) {
       #training .weekday .entry-container {
-        text-align: left;
-        height: 120px; } }
+        text-align: left; } }
     @media (max-width: 991.98px) {
       #training .weekday .entry-container.dummy {
         display: none; } }
   #training .weekday .entry {
+    align-items: center;
+    margin-bottom: 30px; }
+    @media (min-width: 992px) {
+      #training .weekday .entry {
+        height: 120px; } }
+  #training .weekday .entry-small {
     align-items: center; }
-    #training .weekday .entry img {
-      width: 100%;
-      max-width: 100px;
-      margin-top: 5px;
-      margin-bottom: 5px; }
-      #training .weekday .entry img.avatar {
-        border-radius: 50%; }
-    #training .weekday .entry .time {
-      color: rgba(0, 0, 0, 0.6); }
-    #training .weekday .entry .title {
-      font-weight: 500;
-      font-size: 1.5rem;
-      line-height: 1.5rem; }
-    #training .weekday .entry .location {
-      font-size: .8rem;
-      margin-top: 15px;
-      display: inline-block;
-      padding: 2px 9px;
-      background: rgba(0, 0, 0, 0.4);
-      color: rgba(255, 255, 255, 0.9);
-      border-radius: 2px; }
+  #training .weekday img {
+    width: 100%;
+    max-width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    #training .weekday img.avatar {
+      border-radius: 50% !important; }
+  #training .weekday .time {
+    color: rgba(0, 0, 0, 0.6); }
+  #training .weekday .title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+  #training .weekday .location {
+    font-size: .8rem;
+    margin-top: 15px;
+    display: inline-block;
+    padding: 2px 9px;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px; }
