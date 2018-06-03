@@ -349,11 +349,12 @@
     .entry-small {
       @extend .row;
       align-items: center;
+      justify-content: center;
       .avatar-container {
         @extend .col-lg-4;
       }
       .description {
-        @extend .col-lg-8;
+        @extend .col-lg-6;
       }
     }
 
