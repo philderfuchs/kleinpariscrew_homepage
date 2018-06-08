@@ -4,7 +4,6 @@
   padding-bottom: 100px;
 
   color: white;
-  @include box-shadow(inset 0 8px 30px -4px black);
   @include gradient-directional(#221C3D, $bg-dark, 90deg + 45deg);
 
   @include media-breakpoint-down(sm) {

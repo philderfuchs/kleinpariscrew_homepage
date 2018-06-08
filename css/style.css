@@ -3509,52 +3509,54 @@ section {
   position: relative; }
 
 #header {
-  height: 87vh;
+  height: 100vh;
   color: white;
   text-shadow: 0 0 20px black;
   background-image: url("../img/header.jpg");
   background-size: cover;
   background-position: center; }
-  @media (max-width: 767.98px) {
+  @media (min-width: 768px) {
     #header {
-      height: 100vh; } }
+      height: 87vh; } }
   #header .logo-container {
-    margin-top: 130px;
+    margin-top: 30px;
     margin-bottom: 50px;
     text-align: center; }
-    @media (max-width: 767.98px) {
+    @media (min-width: 768px) {
       #header .logo-container {
-        margin-top: 30px; } }
+        margin-top: 130px; } }
     #header .logo-container .logo {
-      width: 300px;
+      width: 225px;
       margin-left: auto;
       margin-right: auto;
       filter: invert(1); }
-      @media (max-width: 991.98px) {
+      @media (min-width: 768px) {
         #header .logo-container .logo {
           width: 400px; } }
-      @media (max-width: 767.98px) {
+      @media (min-width: 576px) {
         #header .logo-container .logo {
-          width: 225px; } }
+          width: 300px; } }
   #header .caption-container {
     text-align: center; }
     #header .caption-container .caption {
-      margin-bottom: .3rem;
-      font-size: 3.4rem;
+      font-size: 2.2rem;
+      margin-bottom: 5px;
       text-transform: uppercase; }
-      @media (max-width: 767.98px) {
+      @media (min-width: 768px) {
         #header .caption-container .caption {
-          font-size: 2.2rem;
-          margin-bottom: 15px; } }
+          margin-bottom: 5px;
+          font-size: 3.4rem; } }
     #header .caption-container .subcaption {
-      font-size: 1.6rem;
       font-weight: 500;
       padding-left: 20px;
-      padding-right: 20px; }
-      @media (max-width: 767.98px) {
+      padding-right: 20px;
+      padding: 0;
+      font-size: 1.2rem; }
+      @media (min-width: 768px) {
         #header .caption-container .subcaption {
-          padding: 0;
-          font-size: 1.3rem; } }
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 1.6rem; } }
     #header .caption-container .social-media {
       font-size: 2.3rem; }
       #header .caption-container .social-media .fab {
@@ -3592,7 +3594,6 @@ section {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  box-shadow: inset 0 8px 30px -4px black;
   background-image: linear-gradient(135deg, #221C3D, #110726);
   background-repeat: repeat-x; }
   @media (max-width: 767.98px) {
