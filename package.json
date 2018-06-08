@@ -4,7 +4,9 @@
   "description": "kleinparis homepage",
   "scripts": {
     "start": "concurrently --kill-others 'npm run serve' 'npm run sass:watch' 'npm run hbs:watch'",
+    "build": "npm run sass:build | npm run hbs:build",
     "sass:watch": "node-sass scss/style.scss css/style.css --watch",
+    "sass:build": "node-sass scss/style.scss css/style.css --output-style compressed",
     "serve": "autoreload-server -d ./ -p 8080",
     "hbs:watch": "onchange -i './**/*.hbs' -- npm run hbs:build",
     "hbs:build": "hbs index.hbs -P ./**/*.hbs",
