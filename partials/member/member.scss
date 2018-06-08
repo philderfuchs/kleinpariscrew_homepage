@@ -51,9 +51,9 @@
       }
 
       .fab {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 15px;
-        @include margin-x(15px);
+        @include margin-x(14px);
 
         @include media-breakpoint-up(md) {
           margin: 10px 5px;
