@@ -1,0 +1,101 @@
+#training {
+  padding-top: 20px;
+  padding-bottom: 150px;
+  background: $bg-light;
+  color: black;
+  @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
+
+  .section-heading {
+    @include section-heading(rgba(black, .4), white);
+    padding-bottom: 70px;
+  }
+
+  .weekday {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(black, .1);
+    }
+    .header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .entry-container {
+      @extend .col-6;
+      @extend .col-sm-4;
+      @extend .col-md-3;
+      @extend .col-lg-12;
+      text-align: center;
+      @include media-breakpoint-up(lg) {
+        text-align: left;
+      }
+
+      &.dummy {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+    }
+    //text-align: center;
+    .entry {
+      @extend .row;
+      align-items: center;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up(lg) {
+        height: 120px;
+      }
+      .avatar-container {
+        @extend .col-lg-5;
+      }
+      .description {
+        @extend .col-lg-7;
+      }
+    }
+    .entry-small {
+      @extend .row;
+      align-items: center;
+      justify-content: center;
+      .avatar-container {
+        @extend .col-lg-4;
+      }
+      .description {
+        @extend .col-lg-6;
+      }
+    }
+
+    img {
+      &.avatar {
+        border-radius: 50% !important;
+      }
+      width: 100%;
+      max-width: 100px;
+      @include margin-y(5px);
+      //@include margin-x(auto);
+      //display: block;
+      //@include media-breakpoint-down(md) {
+      //  margin: 5px 0;
+      //}
+    }
+
+    .time {
+      color: rgba(black, .6);
+      //font-weight: bold;
+    }
+    .title {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+    .location {
+      font-size: .8rem;
+      margin-top: 15px;
+      display: inline-block;
+      padding: 2px 9px;
+
+      background: rgba(black, .4);
+      color: rgba(white, .9);
+      border-radius: 2px;
+    }
+
+  }
+
+}

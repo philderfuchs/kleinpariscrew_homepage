@@ -1,0 +1,75 @@
+#header {
+  @extend %flex-center;
+  height: 87vh;
+
+  color: white;
+  text-shadow: 0 0 20px black;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @include media-breakpoint-down(sm) {
+    height: 100vh;
+  }
+
+  .logo-container {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+    }
+    .logo {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      //display: block;
+
+      filter: invert(1);
+
+      @include media-breakpoint-down(md) {
+        width: 400px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 225px;
+      }
+    }
+  }
+  .caption-container {
+    text-align: center;
+    .caption {
+      margin-bottom: .3rem;
+      font-size: 3.4rem;
+      text-transform: uppercase;
+      //text-align: center;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+      }
+    }
+    .subcaption {
+      font-size: 1.6rem;
+      font-weight: 500;
+      @include pad-x(20px);
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+        font-size: 1.3rem;
+      }
+    }
+    .social-media {
+      font-size: 2.3rem;
+      .fab {
+        margin: 15px;
+      }
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

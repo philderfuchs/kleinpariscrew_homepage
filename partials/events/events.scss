@@ -1,0 +1,43 @@
+
+#events {
+  padding-top: 20px;
+  padding-bottom: 100px;
+
+  color: white;
+  @include gradient-directional(rgba($primary, 1), rgba($info, 1), 90deg + 45deg);
+  @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
+
+  .section-heading {
+    @include section-heading(rgba(white, .4), rgba(black, .25));
+  }
+
+  .camp {
+    margin-bottom: 100px;
+    .description {
+      @include description(right, center);
+    }
+    .key-visual {
+      @extend %responsive;
+      padding: $lg-middle-pad;
+    }
+    .slick-carousel {
+      margin-top: 50px;
+      .item {
+        height: 300px;
+        @include margin-x(1px);
+      }
+    }
+  }
+
+  .battle {
+    margin-top: 30px;
+    .key-visual {
+      @extend %responsive;
+      padding: $lg-middle-pad;
+      filter: invert(1);
+    }
+    .description {
+      @include description(left, center);
+    }
+  }
+}

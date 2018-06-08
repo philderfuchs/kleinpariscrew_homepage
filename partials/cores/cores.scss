@@ -1,0 +1,30 @@
+#cores {
+  @extend %flex-center;
+  height: 0;
+  @include media-breakpoint-down(sm) {
+    visibility: hidden;
+  }
+  @include media-breakpoint-up(md) {
+    overflow: visible;
+    z-index: 1;
+  }
+
+  .btn {
+    display: block;
+    margin: auto;
+    @include media-breakpoint-up(lg) {
+      width: 220px;
+      @include pad-x(3rem);
+
+      font-size: 1.5rem;
+    }
+
+    //@include margin-x(40px);
+    width: 180px;
+
+    text-transform: capitalize;
+    border-radius: 2rem;
+    border-top: 1px solid rgba(white, .6);
+    @include box-shadow(0 -5px 15px -5px rgba(black, .4));
+  }
+}

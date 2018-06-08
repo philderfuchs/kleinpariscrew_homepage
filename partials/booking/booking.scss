@@ -1,0 +1,27 @@
+#booking {
+  padding-bottom: 120px;
+  background: $bg-light;
+
+  .section-heading {
+    @include section-heading(rgba(black, .3), rgba(white, 1));
+  }
+
+  .content {
+    color: black;
+    margin-top: 40px;
+    .description {
+      @include description(left, left);
+    }
+
+    .video {
+      @include media-breakpoint-up(lg) {
+        padding-right: $lg-middle-pad;
+      }
+      margin-top: 130px;
+      @include media-breakpoint-down(md) {
+        margin-top: 70px;
+      }
+    }
+
+  }
+}

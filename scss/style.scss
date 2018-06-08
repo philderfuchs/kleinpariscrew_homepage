@@ -44,4 +44,12 @@
 //@import "../node_modules/bootstrap/scss/print";
 
 @import "global";
+
+@import "../partials/header/header.scss";
+@import "../partials/cores/cores.scss";
+@import "../partials/member/member.scss";
+@import "../partials/booking/booking.scss";
+@import "../partials/events/events.scss";
+@import "../partials/training/training.scss";
+@import "../partials/footer/footer.scss";
 @import "sections";
