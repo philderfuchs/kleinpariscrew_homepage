@@ -13,133 +13,14 @@
                 </a>
             </div>
             <div class="col-lg-6 portraits">
-                <div class="row align-content-center">
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 align-self-center">
-                                <div class="name">Valeska</div>
-                                <div class="style">House</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/valeskapasta/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://soundcloud.com/valeska-s-peace" target="_blank">
-                                        <i class="fab fa-soundcloud"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 align-self-center">
-                                <img src="img/portraits/valeska.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 align-self-center">
-                                <div class="name">Ali</div>
-                                <div class="style">House</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/ali.kerdieh99/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://www.facebook.com/Ali.kerdieh23" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 align-self-center">
-                                <img src="img/portraits/ali.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 align-self-center">
-                                <div class="name">Daniel</div>
-                                <div class="style">Locking</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/danisun_kleinparis/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://www.facebook.com/danni.jmi" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 align-self-center">
-                                <img src="img/portraits/daniel.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 align-self-center">
-                                <div class="name">Phil</div>
-                                <div class="style">Footwork</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/phil_vong_kleinparis/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://soundcloud.com/philipp-anders-7" target="_blank">
-                                        <i class="fab fa-soundcloud"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 align-self-center">
-                                <img src="img/portraits/phil.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 order-md-last align-self-center">
-                                <div class="name">Ken</div>
-                                <div class="style">Hip Hop</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/phil_vong_kleinparis/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 order-md-first align-self-center">
-                                <img src="img/portraits/ken.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 order-md-last align-self-center">
-                                <div class="name">Max</div>
-                                <div class="style">Hip Hop</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/max_kleinparis/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 order-md-first align-self-center">
-                                <img src="img/portraits/max.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 portrait">
-                        <div class="row">
-                            <div class="col-6 col-md-12 order-md-last align-self-center">
-                                <div class="name">Huydoc</div>
-                                <div class="style">Popping</div>
-                                <div class="social-media">
-                                    <a href="https://www.instagram.com/hyudoc_kleinparis/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-12 order-md-first align-self-center">
-                                <img src="img/portraits/huy.jpg"/>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row align-content-center justify-content-center">
+                    {{> portrait name="Valeska" style="House" imgUrl="img/portraits/valeska.jpg" instagram="https://www.instagram.com/valeskapasta/" soundcloud="https://soundcloud.com/valeska-s-peace" reflect=true}}
+                    {{> portrait name="Ali" style="House" imgUrl="img/portraits/ali.png" instagram="https://www.instagram.com/ali.kerdieh99/" facebook="https://www.facebook.com/Ali.kerdieh23" reflect=true}}
+                    {{> portrait name="Daniel" style="Locking" imgUrl="img/portraits/daniel.png" instagram="https://www.instagram.com/danisun_kleinparis/" facebook="https://www.facebook.com/danni.jmi" reflect=true}}
+                    {{> portrait name="Phil" style="Hip Hop" imgUrl="img/portraits/phil.png" instagram="https://www.instagram.com/phil_vong_kleinparis/" soundcloud="https://soundcloud.com/philipp-anders-7" reflect=true}}
+                    {{> portrait name="Ken" style="Hip Hop" imgUrl="img/portraits/ken.jpg" instagram="https://www.instagram.com/kenkleinparis/"}}
+                    {{> portrait name="Max" style="Hip Hop" imgUrl="img/portraits/max.jpg" instagram="https://www.instagram.com/max_kleinparis/"}}
+                    {{> portrait name="Huy" style="Popping" imgUrl="img/portraits/huy.jpg" instagram="https://www.instagram.com/hyudoc_kleinparis/"}}
                 </div>
             </div>
             <div class="col-7 wrapper">

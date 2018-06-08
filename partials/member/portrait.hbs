@@ -1,0 +1,28 @@
+<div class="col-6 col-sm-4 col-md-3 portrait">
+    <div class="row">
+        <div class="col-12 align-self-center">
+            <img src="{{imgUrl}}"/>
+        </div>
+        <div class="col-12 {{#if reflect}}order-md-first{{/if}} align-self-center">
+            <div class="name">{{name}}</div>
+            <div class="style">{{style}}</div>
+            <div class="social-media">
+                {{#if instagram}}
+                    <a href="{{instagram}}" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                {{/if}}
+                {{#if soundcloud}}
+                    <a href="{{soundcloud}}" target="_blank">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+                {{/if}}
+                {{#if facebook}}
+                    <a href="{{facebook}}" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

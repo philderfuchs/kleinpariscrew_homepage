@@ -3633,26 +3633,29 @@ section {
       #member .portraits .portrait .name {
         margin-top: 8px;
         margin-bottom: 0;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-family: "Barlow", sans-serif;
         color: white; }
-        @media (max-width: 767.98px) {
+        @media (min-width: 768px) {
           #member .portraits .portrait .name {
-            font-size: 1.8rem; } }
-      @media (max-width: 767.98px) {
-        #member .portraits .portrait .style {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }
+            font-size: 1.5rem; } }
+      #member .portraits .portrait .style {
+        font-size: 1.5rem; }
+        @media (min-width: 768px) {
+          #member .portraits .portrait .style {
+            font-size: 1rem; } }
       #member .portraits .portrait .fab {
-        margin: 10px 5px;
-        font-size: 1.3rem; }
-        @media (max-width: 767.98px) {
+        font-size: 2rem;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px; }
+        @media (min-width: 768px) {
           #member .portraits .portrait .fab {
-            font-size: 1.8rem;
-            margin-top: 20px;
-            margin-left: 12px;
-            margin-right: 12px; } }
+            margin: 10px 5px;
+            font-size: 1.3rem; } }
       #member .portraits .portrait img {
         width: 100%;
+        max-width: 200px;
         margin-top: 3px;
         border-radius: 50% !important; }
 
