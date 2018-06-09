@@ -43,7 +43,8 @@
 @import "../node_modules/bootstrap/scss/utilities.scss";
 //@import "../node_modules/bootstrap/scss/print";
 
-@import "global";
+@import "presets";
+@import "globals";
 
 @import "../partials/header/header.scss";
 @import "../partials/cores/cores.scss";
@@ -52,4 +53,3 @@
 @import "../partials/events/events.scss";
 @import "../partials/training/training.scss";
 @import "../partials/footer/footer.scss";
-@import "sections";
