@@ -20,13 +20,13 @@
 
 @mixin description($align-desktop, $align-mobile) {
   text-align: $align-desktop;
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-  p {
-    margin-top: 30px;
-  }
+  //h1 {
+  //  font-size: 3rem;
+  //  margin-bottom: 0;
+  //}
+  //p {
+  //  margin-top: 30px;
+  //}
   .btn {
     @include margin-y(7px);
   }

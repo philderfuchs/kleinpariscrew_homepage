@@ -1,17 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,700i|Montserrat:300,400,500');
+
+// OWN STYLE DEFINITION
+
+$lg-middle-pad: 35px;
+
+$bg-dark: #110726;
+$bg-light: #F8F5FF;
+
+// OVERWRITE BOOTSTRAP
 
 $headings-font-family: 'Barlow', sans-serif;
 $font-family-sans-serif: 'Montserrat', sans-serif;
+$font-weight-normal: 300;
 
 $primary: #FF3275;
 $secondary: #00CF9C;
 $info: #6D26FF;
 
-$bg-dark: #110726;
-$bg-light: #F8F5FF;
+$body-bg: $bg-dark;
+$body-color: white;
+
+$font-weight-normal: 300;
+$link-color: $body-color;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
 
 $enable-shadows: true;
-$font-weight-normal: 300;
-
-$lg-middle-pad: 35px;

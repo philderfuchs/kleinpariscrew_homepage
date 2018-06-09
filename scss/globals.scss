@@ -1,14 +1,37 @@
 body {
   background: $bg-dark;
   color: white;
-}
 
-p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  @include media-breakpoint-up(md) {
+    font-size: 1.3rem;
+  }
 }
 
 h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+  line-height: 2rem;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 20px;
+    line-height: 2.3rem;
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 25px;
+    line-height: 2.7rem;
+    font-size: 3rem;
+  }
+  .sub {
+    font-size: 1.4rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1.8rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 2.1rem;
+    }
+  }
 }
 
 .btn {
@@ -33,22 +56,14 @@ strong {
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
-}
-
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none !important;
-  &:hover {
-    color: $primary;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
+
 }
 
 // necessary to avoid outer blank space
