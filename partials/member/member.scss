@@ -28,30 +28,21 @@
       .name {
         margin-top: 8px;
         margin-bottom: -3px;
-        font-size: $font-size-big-mobile;
         font-family: $headings-font-family;
-        @include media-breakpoint-up(md) {
-          font-size: $font-size-big-desktop;
-        }
+        @extend %font-big;
       }
 
       .style {
         color: rgba(white, .6);
-        font-size: $font-size-small-mobile;
-        @include media-breakpoint-up(md) {
-          font-size: $font-size-small-desktop;
-        }
+        @extend %font-small;
       }
 
       .fab {
         color: rgba(white, .6);
-
-        font-size: $font-size-norm-mobile;
         margin: 8px;
 
         @include media-breakpoint-up(md) {
           margin: 10px 5px;
-          font-size: $font-size-norm-desktop;
         }
       }
       img {

@@ -3455,6 +3455,18 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center; }
 
+#member .portraits .portrait .name {
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    #member .portraits .portrait .name {
+      font-size: 1.6rem; } }
+
+#member .portraits .portrait .style {
+  font-size: 0.9rem; }
+  @media (min-width: 768px) {
+    #member .portraits .portrait .style {
+      font-size: 1rem; } }
+
 body {
   background: #110726;
   color: white;
@@ -3651,25 +3663,15 @@ section {
       #member .portraits .portrait .name {
         margin-top: 8px;
         margin-bottom: -3px;
-        font-size: 1.5rem;
         font-family: "Barlow", sans-serif; }
-        @media (min-width: 768px) {
-          #member .portraits .portrait .name {
-            font-size: 1.6rem; } }
       #member .portraits .portrait .style {
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 0.9rem; }
-        @media (min-width: 768px) {
-          #member .portraits .portrait .style {
-            font-size: 1rem; } }
+        color: rgba(255, 255, 255, 0.6); }
       #member .portraits .portrait .fab {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 1.1rem;
         margin: 8px; }
         @media (min-width: 768px) {
           #member .portraits .portrait .fab {
-            margin: 10px 5px;
-            font-size: 1.3rem; } }
+            margin: 10px 5px; } }
       #member .portraits .portrait img {
         width: 100%;
         max-width: 150px;

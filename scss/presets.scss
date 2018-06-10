@@ -18,6 +18,13 @@
   margin-bottom: $size;
 }
 
+@mixin responsive($max-width) {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+  display: block;
+}
+
 @mixin description($align-desktop, $align-mobile) {
   text-align: $align-mobile;
   @include media-breakpoint-up(lg) {
@@ -53,9 +60,17 @@
   align-items: center;
 }
 
-@mixin responsive($max-width) {
-  width: 100%;
-  max-width: $max-width;
-  margin: auto;
-  display: block;
+%font-big {
+  font-size: $font-size-big-mobile;
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-big-desktop;
+  }
 }
+
+%font-small {
+  font-size: $font-size-small-mobile;
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-small-desktop;
+  }
+}
+
