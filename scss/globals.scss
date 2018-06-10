@@ -10,45 +10,69 @@ body {
 
 h1 {
   margin-bottom: 15px;
-  font-size: 1.7rem;
-  line-height: 2rem;
+  font-size: 2rem;
 
   @include media-breakpoint-up(md) {
     margin-bottom: 20px;
-    line-height: 2.3rem;
     font-size: 2.5rem;
   }
   @include media-breakpoint-up(xl) {
     margin-bottom: 25px;
-    line-height: 2.7rem;
     font-size: 3rem;
   }
   .sub {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     @include media-breakpoint-up(md) {
       font-size: 1.8rem;
     }
     @include media-breakpoint-up(xl) {
       font-size: 2.1rem;
+      margin-top: -5px;
     }
+  }
+  strong {
+    font-style: italic;
+    font-weight: 700;
+  }
+}
+
+p {
+  margin-bottom: 8px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 12px;
+  }
+}
+
+.spacer {
+  display: inline-block;
+  width: 5px;
+  @include media-breakpoint-up(md) {
+    width: 10px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 15px;
   }
 }
 
 .btn {
-  text-transform: uppercase;
-  border-radius: 2rem;
   $pad: 1.5rem;
   padding-left: $pad;
   padding-right: $pad;
+  @include margin-y(3px);
+
+  font-size: .8rem;
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
+  text-transform: uppercase;
+  border-radius: 2rem;
   @include box-shadow(0 8px 10px -5px rgba(black, .4));
   .fab, .far {
     margin-right: 5px;
   }
-}
-
-strong {
-  font-style: italic;
-  font-weight: 700;
 }
 
 .videoWrapper {

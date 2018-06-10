@@ -3470,39 +3470,61 @@ body {
 
 h1 {
   margin-bottom: 15px;
-  font-size: 1.7rem;
-  line-height: 2rem; }
+  font-size: 2rem; }
   @media (min-width: 768px) {
     h1 {
       margin-bottom: 20px;
-      line-height: 2.3rem;
       font-size: 2.5rem; } }
   @media (min-width: 1200px) {
     h1 {
       margin-bottom: 25px;
-      line-height: 2.7rem;
       font-size: 3rem; } }
   h1 .sub {
-    font-size: 1.4rem; }
+    font-size: 1.5rem; }
     @media (min-width: 768px) {
       h1 .sub {
         font-size: 1.8rem; } }
     @media (min-width: 1200px) {
       h1 .sub {
-        font-size: 2.1rem; } }
+        font-size: 2.1rem;
+        margin-top: -5px; } }
+  h1 strong {
+    font-style: italic;
+    font-weight: 700; }
+
+p {
+  margin-bottom: 8px; }
+  @media (min-width: 768px) {
+    p {
+      margin-bottom: 10px; } }
+  @media (min-width: 1200px) {
+    p {
+      margin-bottom: 12px; } }
+
+.spacer {
+  display: inline-block;
+  width: 5px; }
+  @media (min-width: 768px) {
+    .spacer {
+      width: 10px; } }
+  @media (min-width: 992px) {
+    .spacer {
+      width: 15px; } }
 
 .btn {
-  text-transform: uppercase;
-  border-radius: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.4); }
+  @media (min-width: 768px) {
+    .btn {
+      font-size: 1rem; } }
   .btn .fab, .btn .far {
     margin-right: 5px; }
-
-strong {
-  font-style: italic;
-  font-weight: 700; }
 
 .videoWrapper {
   position: relative;
@@ -3614,19 +3636,13 @@ section {
       padding-top: 50px;
       padding-bottom: 50px; } }
   #member .description {
-    text-align: right; }
-    #member .description .btn {
-      margin-top: 7px;
-      margin-bottom: 7px; }
+    text-align: center; }
     @media (min-width: 992px) {
       #member .description {
         padding-right: 35px; } }
-    @media (min-width: 768px) {
-      #member .description .btn {
-        margin-left: 30px; } }
-    @media (max-width: 991.98px) {
+    @media (min-width: 992px) {
       #member .description {
-        text-align: center !important; } }
+        text-align: right !important; } }
   #member .portraits {
     margin-top: 95px; }
     @media (min-width: 992px) {
@@ -3686,16 +3702,10 @@ section {
     margin-top: 40px; }
     #booking .content .description {
       text-align: left; }
-      #booking .content .description .btn {
-        margin-top: 7px;
-        margin-bottom: 7px; }
       @media (min-width: 992px) {
         #booking .content .description {
           padding-left: 35px; } }
-      @media (min-width: 768px) {
-        #booking .content .description .btn {
-          margin-right: 30px; } }
-      @media (max-width: 991.98px) {
+      @media (min-width: 992px) {
         #booking .content .description {
           text-align: left !important; } }
     #booking .content .video {
@@ -3727,19 +3737,13 @@ section {
   #events .camp {
     margin-bottom: 100px; }
     #events .camp .description {
-      text-align: right; }
-      #events .camp .description .btn {
-        margin-top: 7px;
-        margin-bottom: 7px; }
+      text-align: center; }
       @media (min-width: 992px) {
         #events .camp .description {
           padding-right: 35px; } }
-      @media (min-width: 768px) {
-        #events .camp .description .btn {
-          margin-left: 30px; } }
-      @media (max-width: 991.98px) {
+      @media (min-width: 992px) {
         #events .camp .description {
-          text-align: center !important; } }
+          text-align: right !important; } }
     #events .camp .key-visual {
       padding: 35px; }
     #events .camp .slick-carousel {
@@ -3754,19 +3758,13 @@ section {
       padding: 35px;
       filter: invert(1); }
     #events .battle .description {
-      text-align: left; }
-      #events .battle .description .btn {
-        margin-top: 7px;
-        margin-bottom: 7px; }
+      text-align: center; }
       @media (min-width: 992px) {
         #events .battle .description {
           padding-left: 35px; } }
-      @media (min-width: 768px) {
-        #events .battle .description .btn {
-          margin-right: 30px; } }
-      @media (max-width: 991.98px) {
+      @media (min-width: 992px) {
         #events .battle .description {
-          text-align: center !important; } }
+          text-align: left !important; } }
 
 #training {
   padding-top: 20px;
