@@ -51,10 +51,10 @@
       font-weight: 500;
       @include pad-x(20px);
       padding: 0;
-      font-size: 1.2rem;
+      font-size: $font-size-big-mobile;
       @include media-breakpoint-up(md) {
         @include pad-x(20px);
-        font-size: 1.6rem;
+        font-size: $font-size-big-desktop;
       }
     }
     .social-media {

@@ -12,11 +12,13 @@
   .btn {
     display: block;
     margin: auto;
+    font-size: $font-size-norm-mobile;
+
     @include media-breakpoint-up(lg) {
       width: 220px;
       @include pad-x(3rem);
 
-      font-size: 1.5rem;
+      font-size: $font-size-norm-desktop;
     }
 
     //@include margin-x(40px);

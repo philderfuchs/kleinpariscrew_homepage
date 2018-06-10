@@ -16,49 +16,42 @@
   }
 
   .portraits {
-    margin-top: 95px;
+    margin-top: 40px;
     @include media-breakpoint-up(lg) {
       padding-left: $lg-middle-pad;
+      margin-top: 95px;
     }
 
     .portrait {
       margin-bottom: 20px;
       text-align: center;
-
-      @include media-breakpoint-down(sm) {
-        margin-bottom: 50px;
-      }
       .name {
         margin-top: 8px;
-        margin-bottom: 0;
-
-        font-size: $font-size-big;
+        margin-bottom: -3px;
+        font-size: $font-size-big-mobile;
         font-family: $headings-font-family;
-
         @include media-breakpoint-up(md) {
-          font-size: $font-size-big;
-          margin-bottom: -3px;
+          font-size: $font-size-big-desktop;
         }
       }
 
       .style {
         color: rgba(white, .6);
-
+        font-size: $font-size-small-mobile;
         @include media-breakpoint-up(md) {
-          font-size: $font-size-small;
+          font-size: $font-size-small-desktop;
         }
       }
 
       .fab {
         color: rgba(white, .6);
 
-        font-size: $font-size-big;
-        margin-top: 15px;
-        @include margin-x(14px);
+        font-size: $font-size-norm-mobile;
+        margin: 8px;
 
         @include media-breakpoint-up(md) {
           margin: 10px 5px;
-          font-size: $font-size-desktop;
+          font-size: $font-size-norm-desktop;
         }
       }
       img {

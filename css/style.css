@@ -3511,13 +3511,13 @@ p {
   padding-right: 1.5rem;
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: 0.855rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   border-radius: 2rem;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.4); }
   @media (min-width: 768px) {
     .btn {
-      font-size: 0.95rem; } }
+      font-size: 1rem; } }
   .btn .fab, .btn .far {
     margin-right: 5px; }
 
@@ -3581,7 +3581,7 @@ section {
       padding-left: 20px;
       padding-right: 20px;
       padding: 0;
-      font-size: 1.2rem; }
+      font-size: 1.5rem; }
       @media (min-width: 768px) {
         #header .caption-container .subcaption {
           padding-left: 20px;
@@ -3608,6 +3608,7 @@ section {
   #cores .btn {
     display: block;
     margin: auto;
+    font-size: 1.1rem;
     width: 180px;
     text-transform: capitalize;
     border-radius: 2rem;
@@ -3618,7 +3619,7 @@ section {
         width: 220px;
         padding-left: 3rem;
         padding-right: 3rem;
-        font-size: 1.5rem; } }
+        font-size: 1.3rem; } }
 
 #member {
   padding-top: 150px;
@@ -3639,36 +3640,32 @@ section {
       #member .description {
         text-align: right !important; } }
   #member .portraits {
-    margin-top: 95px; }
+    margin-top: 40px; }
     @media (min-width: 992px) {
       #member .portraits {
-        padding-left: 35px; } }
+        padding-left: 35px;
+        margin-top: 95px; } }
     #member .portraits .portrait {
       margin-bottom: 20px;
       text-align: center; }
-      @media (max-width: 767.98px) {
-        #member .portraits .portrait {
-          margin-bottom: 50px; } }
       #member .portraits .portrait .name {
         margin-top: 8px;
-        margin-bottom: 0;
-        font-size: 1.6rem;
+        margin-bottom: -3px;
+        font-size: 1.5rem;
         font-family: "Barlow", sans-serif; }
         @media (min-width: 768px) {
           #member .portraits .portrait .name {
-            font-size: 1.6rem;
-            margin-bottom: -3px; } }
+            font-size: 1.6rem; } }
       #member .portraits .portrait .style {
-        color: rgba(255, 255, 255, 0.6); }
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem; }
         @media (min-width: 768px) {
           #member .portraits .portrait .style {
-            font-size: 0.95rem; } }
+            font-size: 1rem; } }
       #member .portraits .portrait .fab {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 1.6rem;
-        margin-top: 15px;
-        margin-left: 14px;
-        margin-right: 14px; }
+        font-size: 1.1rem;
+        margin: 8px; }
         @media (min-width: 768px) {
           #member .portraits .portrait .fab {
             margin: 10px 5px;
