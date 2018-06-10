@@ -10,7 +10,11 @@
   }
 
   .fab {
-    margin: 0 10px;
+    margin: 6px 10px;
+    font-size: $font-size-big;
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-tiny;
+    }
   }
 
   img {

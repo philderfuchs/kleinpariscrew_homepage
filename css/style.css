@@ -3841,7 +3841,11 @@ section {
     margin-top: 5px;
     margin-bottom: 5px; }
   #footer .fab {
-    margin: 0 10px; }
+    margin: 6px 10px;
+    font-size: 1.6rem; }
+    @media (min-width: 992px) {
+      #footer .fab {
+        font-size: 0.8rem; } }
   #footer img {
     width: 100%;
     max-width: 170px;
