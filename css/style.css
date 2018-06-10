@@ -57,7 +57,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.5;
   color: white;
@@ -306,25 +306,25 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 2.75rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 2.2rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 1.925rem; }
 
 h4, .h4 {
-  font-size: 1.5rem; }
+  font-size: 1.65rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.375rem; }
 
 h6, .h6 {
-  font-size: 1rem; }
+  font-size: 1.1rem; }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 300; }
 
 .display-1 {
@@ -382,7 +382,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem; }
+  font-size: 1.375rem; }
 
 .blockquote-footer {
   display: block;
@@ -1012,7 +1012,7 @@ mark,
   user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -1434,13 +1434,13 @@ fieldset:disabled a.btn {
 
 .btn-lg {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.9625rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -3455,11 +3455,6 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center; }
 
-#events .camp .key-visual, #events .battle .key-visual, #footer img {
-  width: 100%;
-  margin: auto;
-  display: block; }
-
 body {
   background: #110726;
   color: white;
@@ -3516,13 +3511,13 @@ p {
   padding-right: 1.5rem;
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: .8rem;
+  font-size: 0.855rem;
   text-transform: uppercase;
   border-radius: 2rem;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.4); }
   @media (min-width: 768px) {
     .btn {
-      font-size: 1rem; } }
+      font-size: 0.95rem; } }
   .btn .fab, .btn .far {
     margin-right: 5px; }
 
@@ -3650,27 +3645,27 @@ section {
         padding-left: 35px; } }
     #member .portraits .portrait {
       margin-bottom: 20px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.6); }
+      text-align: center; }
       @media (max-width: 767.98px) {
         #member .portraits .portrait {
           margin-bottom: 50px; } }
       #member .portraits .portrait .name {
         margin-top: 8px;
         margin-bottom: 0;
-        font-size: 2.5rem;
-        font-family: "Barlow", sans-serif;
-        color: white; }
+        font-size: 1.6rem;
+        font-family: "Barlow", sans-serif; }
         @media (min-width: 768px) {
           #member .portraits .portrait .name {
-            font-size: 1.5rem; } }
+            font-size: 1.6rem;
+            margin-bottom: -3px; } }
       #member .portraits .portrait .style {
-        font-size: 1.5rem; }
+        color: rgba(255, 255, 255, 0.6); }
         @media (min-width: 768px) {
           #member .portraits .portrait .style {
-            font-size: 1rem; } }
+            font-size: 0.95rem; } }
       #member .portraits .portrait .fab {
-        font-size: 1.8rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.6rem;
         margin-top: 15px;
         margin-left: 14px;
         margin-right: 14px; }
@@ -3680,7 +3675,9 @@ section {
             font-size: 1.3rem; } }
       #member .portraits .portrait img {
         width: 100%;
-        max-width: 200px;
+        max-width: 150px;
+        margin: auto;
+        display: block;
         margin-top: 3px;
         border-radius: 50% !important; }
 
@@ -3745,6 +3742,10 @@ section {
         #events .camp .description {
           text-align: right !important; } }
     #events .camp .key-visual {
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+      display: block;
       padding: 35px; }
     #events .camp .slick-carousel {
       margin-top: 50px; }
@@ -3755,6 +3756,10 @@ section {
   #events .battle {
     margin-top: 30px; }
     #events .battle .key-visual {
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+      display: block;
       padding: 35px;
       filter: invert(1); }
     #events .battle .description {
@@ -3830,17 +3835,18 @@ section {
 #footer {
   background: #110726;
   color: rgba(255, 255, 255, 0.7);
-  padding: 30px 0; }
-  @media (max-width: 991.98px) {
-    #footer {
-      font-size: 1.5rem; } }
+  padding: 30px 0;
+  font-size: 0.8rem; }
   #footer .row > *, #footer #training .weekday .entry > *, #training .weekday #footer .entry > *, #footer #training .weekday .entry-small > *, #training .weekday #footer .entry-small > * {
     margin-top: 5px;
     margin-bottom: 5px; }
   #footer .fab {
     margin: 0 10px; }
   #footer img {
+    width: 100%;
     max-width: 170px;
+    margin: auto;
+    display: block;
     filter: invert(1); }
   #footer .bordered {
     text-align: center; }

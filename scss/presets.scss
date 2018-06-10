@@ -53,8 +53,9 @@
   align-items: center;
 }
 
-%responsive {
+@mixin responsive($max-width) {
   width: 100%;
+  max-width: $max-width;
   margin: auto;
   display: block;
 }

@@ -1,10 +1,10 @@
 body {
   background: $bg-dark;
   color: white;
+  font-size: $font-size-base;
 
-  font-size: 1.1rem;
   @include media-breakpoint-up(md) {
-    font-size: 1.3rem;
+    font-size: $font-size-desktop;
   }
 }
 
@@ -63,9 +63,9 @@ p {
   padding-right: $pad;
   @include margin-y(3px);
 
-  font-size: .8rem;
+  font-size: $font-size-small * 0.9;
   @include media-breakpoint-up(md) {
-    font-size: 1rem;
+    font-size: $font-size-small;
   }
   text-transform: uppercase;
   border-radius: 2rem;

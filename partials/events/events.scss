@@ -17,7 +17,7 @@
       @include description(right, center);
     }
     .key-visual {
-      @extend %responsive;
+      @include responsive(400px);
       padding: $lg-middle-pad;
     }
     .slick-carousel {
@@ -32,7 +32,7 @@
   .battle {
     margin-top: 30px;
     .key-visual {
-      @extend %responsive;
+      @include responsive(400px);
       padding: $lg-middle-pad;
       filter: invert(1);
     }
