@@ -108,8 +108,7 @@
       }
     }
     .heading {
-      @extend %font-big;
-      font-family: $headings-font-family;
+      @extend %truncate;
     }
     .date {
       //@extend %font-small;
