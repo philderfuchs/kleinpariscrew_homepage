@@ -46,7 +46,7 @@
         }
       }
       img {
-        @include responsive(150px);
+        @include responsive(120px);
         margin-top: 3px;
         border-radius: 50% !important;
       }

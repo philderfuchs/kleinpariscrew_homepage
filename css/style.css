@@ -441,7 +441,7 @@ mark,
   margin-right: auto;
   margin-left: auto; }
 
-.row, #training .weekday .entry, #training .weekday .entry-small {
+.row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -455,10 +455,10 @@ mark,
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #training .weekday .entry-container, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #training .weekday .entry-container, #training .friday-class .entry-container, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, #training .weekday .entry-small .avatar-container, .col-lg-5, #training .weekday .entry .avatar-container, .col-lg-6, #training .weekday .entry-small .description, .col-lg-7, #training .weekday .entry .description, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
   position: relative;
@@ -497,7 +497,7 @@ mark,
   flex: 0 0 41.66667%;
   max-width: 41.66667%; }
 
-.col-6, #training .weekday .entry-container {
+.col-6, #training .weekday .entry-container, #training .friday-class .entry-container {
   flex: 0 0 50%;
   max-width: 50%; }
 
@@ -618,10 +618,10 @@ mark,
   .col-sm-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-sm-3 {
+  .col-sm-3, #training .weekday .entry-container {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-sm-4, #training .weekday .entry-container {
+  .col-sm-4, #training .friday-class .entry-container {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-sm-5 {
@@ -718,7 +718,7 @@ mark,
   .col-md-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-md-3, #training .weekday .entry-container {
+  .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-md-4 {
@@ -821,16 +821,16 @@ mark,
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-lg-4, #training .weekday .entry-small .avatar-container {
+  .col-lg-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  .col-lg-5, #training .weekday .entry .avatar-container {
+  .col-lg-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-lg-6, #training .weekday .entry-small .description {
+  .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
-  .col-lg-7, #training .weekday .entry .description {
+  .col-lg-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
   .col-lg-8 {
@@ -3455,17 +3455,22 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   align-items: center; }
 
-#member .portraits .portrait .name {
+#member .portraits .portrait .name, #training .friday-class .heading {
   font-size: 1.5rem; }
   @media (min-width: 768px) {
-    #member .portraits .portrait .name {
+    #member .portraits .portrait .name, #training .friday-class .heading {
       font-size: 1.6rem; } }
 
-#member .portraits .portrait .style {
+#member .portraits .portrait .style, #training .friday-class .details {
   font-size: 0.9rem; }
   @media (min-width: 768px) {
-    #member .portraits .portrait .style {
+    #member .portraits .portrait .style, #training .friday-class .details {
       font-size: 1rem; } }
+
+#training .entry .title, #training .entry .location {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 body {
   background: #110726;
@@ -3519,8 +3524,7 @@ p {
       width: 15px; } }
 
 .btn {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 3px 23px;
   margin-top: 3px;
   margin-bottom: 3px;
   font-size: 0.9rem;
@@ -3674,7 +3678,7 @@ section {
             margin: 10px 5px; } }
       #member .portraits .portrait img {
         width: 100%;
-        max-width: 150px;
+        max-width: 120px;
         margin: auto;
         display: block;
         margin-top: 3px;
@@ -3719,7 +3723,7 @@ section {
   color: white;
   background-image: linear-gradient(135deg, #ff3275, #6d26ff);
   background-repeat: repeat-x;
-  box-shadow: inset 0 8px 30px -4px rgba(0, 0, 0, 0.5); }
+  box-shadow: inset 0 15px 15px -8px rgba(0, 0, 0, 0.5); }
   #events .section-heading {
     margin-top: 40px;
     margin-bottom: 20px; }
@@ -3775,7 +3779,7 @@ section {
   padding-bottom: 150px;
   background: #F8F5FF;
   color: black;
-  box-shadow: inset 0 8px 30px -4px rgba(0, 0, 0, 0.5); }
+  box-shadow: inset 0 15px 15px -8px rgba(0, 0, 0, 0.5); }
   #training .section-heading {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -3788,55 +3792,92 @@ section {
       background: rgba(102, 102, 102, 0.4);
       box-shadow: 0 -3px 8px 0px white; }
   #training .weekday:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    border-right: 1px solid rgba(0, 0, 0, 0.07); }
   #training .weekday .header {
     text-align: center;
     padding-bottom: 20px; }
+  @media (max-width: 991.98px) {
+    #training .weekday.dummy {
+      display: none; } }
   #training .weekday .entry-container {
+    padding: 0; }
+  #training .entry {
+    margin-bottom: 30px;
+    align-items: center;
     text-align: center; }
-    @media (min-width: 992px) {
-      #training .weekday .entry-container {
+    @media (min-width: 1200px) {
+      #training .entry {
         text-align: left; } }
-    @media (max-width: 991.98px) {
-      #training .weekday .entry-container.dummy {
-        display: none; } }
-  #training .weekday .entry {
-    align-items: center;
-    margin-bottom: 30px; }
-    @media (min-width: 992px) {
-      #training .weekday .entry {
-        height: 120px; } }
-  #training .weekday .entry-small {
-    align-items: center;
-    justify-content: center; }
-  #training .weekday img {
-    width: 100%;
-    max-width: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px; }
-    #training .weekday img.avatar {
-      border-radius: 50% !important; }
-  #training .weekday .time {
-    color: rgba(0, 0, 0, 0.6); }
-  #training .weekday .title {
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.5rem; }
-  #training .weekday .location {
-    font-size: .8rem;
-    margin-top: 15px;
-    display: inline-block;
-    padding: 2px 9px;
-    background: rgba(0, 0, 0, 0.4);
-    color: rgba(255, 255, 255, 0.9);
-    border-radius: 2px; }
+    #training .entry img {
+      width: 100%;
+      max-width: 110px;
+      margin: auto;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      #training .entry img.avatar {
+        border-radius: 50% !important; }
+      @media (min-width: 1200px) {
+        #training .entry img {
+          width: 100%;
+          max-width: 75px;
+          margin: auto;
+          display: block;
+          width: 90%; } }
+    #training .entry .time {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 0.8rem; }
+    #training .entry .title {
+      font-size: 0.9rem;
+      line-height: 0.9rem;
+      font-weight: 500; }
+      @media (min-width: 768px) {
+        #training .entry .title {
+          font-size: 1rem;
+          line-height: 1rem; } }
+    #training .entry .location {
+      font-size: 0.8rem;
+      display: inline-block;
+      padding: 1px 6px;
+      background: rgba(0, 0, 0, 0.4);
+      color: rgba(255, 255, 255, 0.9);
+      border-radius: 2px;
+      margin-top: 10px;
+      transition: background-color 0.15s ease; }
+      #training .entry .location:hover {
+        background: #110726; }
+  #training .friday-class {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07); }
+    #training .friday-class .description {
+      text-align: left;
+      margin-bottom: 30px; }
+      @media (min-width: 992px) {
+        #training .friday-class .description {
+          padding-right: 35px; } }
+      @media (min-width: 992px) {
+        #training .friday-class .description {
+          text-align: right !important; } }
+    @media (min-width: 576px) {
+      #training .friday-class .class-descriptions {
+        flex-wrap: nowrap;
+        overflow-x: auto; } }
+    #training .friday-class .entry-container {
+      margin-bottom: 30px; }
+      #training .friday-class .entry-container:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.07); }
+    #training .friday-class .heading {
+      font-family: "Barlow", sans-serif; }
+    #training .friday-class .date {
+      margin-bottom: -8px; }
 
 #footer {
   background: #110726;
   color: rgba(255, 255, 255, 0.7);
   padding: 30px 0;
   font-size: 0.8rem; }
-  #footer .row > *, #footer #training .weekday .entry > *, #training .weekday #footer .entry > *, #footer #training .weekday .entry-small > *, #training .weekday #footer .entry-small > * {
+  #footer .row > * {
     margin-top: 5px;
     margin-bottom: 5px; }
   #footer .fab {

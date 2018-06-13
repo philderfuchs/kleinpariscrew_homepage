@@ -3,7 +3,7 @@
   padding-bottom: 150px;
   background: $bg-light;
   color: black;
-  @include box-shadow(inset 0 8px 30px -4px rgba(black, .5));
+  @include box-shadow(inset 0 15px 15px -8px rgba(black, .5));
 
   .section-heading {
     @include section-heading(rgba(black, .4), white);
@@ -12,90 +12,112 @@
 
   .weekday {
     &:not(:last-child) {
-      border-right: 1px solid rgba(black, .1);
+      border-right: 1px solid rgba(black, .07);
     }
     .header {
       text-align: center;
       padding-bottom: 20px;
     }
+
+    &.dummy {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
     .entry-container {
       @extend .col-6;
-      @extend .col-sm-4;
-      @extend .col-md-3;
+      @extend .col-sm-3;
       @extend .col-lg-12;
-      text-align: center;
-      @include media-breakpoint-up(lg) {
-        text-align: left;
-      }
-
-      &.dummy {
-        @include media-breakpoint-down(md) {
-          display: none;
-        }
-      }
+      padding: 0;
     }
-    //text-align: center;
-    .entry {
-      @extend .row;
-      align-items: center;
-      margin-bottom: 30px;
+  }
 
-      @include media-breakpoint-up(lg) {
-        height: 120px;
-      }
-      .avatar-container {
-        @extend .col-lg-5;
-      }
-      .description {
-        @extend .col-lg-7;
-      }
+  .entry {
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      text-align: left;
     }
-    .entry-small {
-      @extend .row;
-      align-items: center;
-      justify-content: center;
-      .avatar-container {
-        @extend .col-lg-4;
-      }
-      .description {
-        @extend .col-lg-6;
-      }
-    }
-
     img {
       &.avatar {
         border-radius: 50% !important;
       }
-      width: 100%;
-      max-width: 100px;
-      @include margin-y(5px);
-      //@include margin-x(auto);
-      //display: block;
-      //@include media-breakpoint-down(md) {
-      //  margin: 5px 0;
-      //}
+      @include responsive(110px);
+      @include margin-y(15px);
+      @include media-breakpoint-up(xl) {
+        @include responsive(75px);
+        width: 90%;
+      }
     }
 
     .time {
-      color: rgba(black, .6);
-      //font-weight: bold;
+      color: rgba(black, .7);
+      font-size: $font-size-tiny;
     }
     .title {
+      @extend %truncate;
+      font-size: $font-size-small-mobile;
+      line-height: $font-size-small-mobile;
+      @include media-breakpoint-up(md) {
+        font-size: $font-size-small-desktop;
+        line-height: $font-size-small-desktop;
+
+      }
       font-weight: 500;
-      font-size: 1.5rem;
-      line-height: 1.5rem;
     }
     .location {
-      font-size: .8rem;
-      margin-top: 15px;
+      @extend %truncate;
+      font-size: $font-size-tiny;
       display: inline-block;
-      padding: 2px 9px;
+      padding: 1px 6px;
 
       background: rgba(black, .4);
       color: rgba(white, .9);
       border-radius: 2px;
-    }
+      margin-top: 10px;
+      transition: background-color 0.15s ease;
 
+      &:hover {
+        background: $bg-dark;
+      }
+    }
+  }
+
+  .friday-class {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(black, .07);
+
+    .description {
+      @include description(right, left);
+      margin-bottom: 30px;
+    }
+    .class-descriptions {
+      @include media-breakpoint-up(sm) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+    }
+    .entry-container {
+      @extend .col-6;
+      @extend .col-sm-4;
+      margin-bottom: 30px;
+      &:not(:last-child) {
+        border-right: 1px solid rgba(black, .07);
+      }
+    }
+    .heading {
+      @extend %font-big;
+      font-family: $headings-font-family;
+    }
+    .date {
+      //@extend %font-small;
+      margin-bottom: -8px;
+    }
+    .details {
+      @extend %font-small;
+    }
   }
 
 }

@@ -58,9 +58,7 @@ p {
 }
 
 .btn {
-  $pad: 1.5rem;
-  padding-left: $pad;
-  padding-right: $pad;
+  padding: 3px 23px;
   @include margin-y(3px);
 
   font-size: $font-size-small-mobile;

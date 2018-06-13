@@ -74,3 +74,8 @@
   }
 }
 
+%truncate {
+  white-space: nowrap; // don't break line
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
