@@ -44,6 +44,9 @@ p {
   @include media-breakpoint-up(xl) {
     margin-bottom: 12px;
   }
+  a {
+    font-weight: 500;
+  }
 }
 
 .spacer {
