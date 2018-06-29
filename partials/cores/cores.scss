@@ -8,9 +8,15 @@
     overflow: visible;
     z-index: 1;
   }
+  .container {
+    position: absolute;
+    width: 100%;
+    top: -20px;
+  }
 
   .btn {
-    display: block;
+    @extend %flex-center;
+    height: 40px;
     margin: auto;
     font-size: $font-size-norm-mobile;
 
@@ -28,5 +34,11 @@
     border-radius: 2rem;
     border-top: 1px solid rgba(white, .6);
     @include box-shadow(0 -5px 15px -5px rgba(black, .4));
+  }
+
+  .description {
+    margin-top: 10px;
+    color: rgba(white, .5);
+    text-align: center;
   }
 }
