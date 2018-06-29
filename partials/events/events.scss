@@ -34,7 +34,6 @@
     .key-visual {
       @include responsive(400px);
       padding: $lg-middle-pad;
-      filter: invert(1);
     }
     .description {
       @include description(left, center);
