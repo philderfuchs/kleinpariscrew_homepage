@@ -12,13 +12,14 @@
   }
 
   .camp {
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     .description {
-      @include description(right, center);
+      @include description(left, center);
     }
     .key-visual {
-      @include responsive(400px);
-      padding: $lg-middle-pad;
+      @include responsive(800px);
+      //padding: $lg-middle-pad;
     }
     .slick-carousel {
       margin-top: 50px;

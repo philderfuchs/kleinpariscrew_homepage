@@ -7,7 +7,7 @@ $(document).ready(function () {
 });
 
 function initParallax() {
-    new Rellax('#header', {});
+    // new Rellax('#header', {});
 
     if ($(window).width() >= desktop_width) {
         var upSpeed = .5;

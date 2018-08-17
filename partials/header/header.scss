@@ -1,60 +1,78 @@
 #header {
-  @extend %flex-center;
+  //@extend %flex-center;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 70px;
   height: 100vh;
 
-  color: white;
-  text-shadow: 0 0 20px black;
-  background-image: url("../img/header.jpg");
-  background-size: cover;
+  color: black;
+  //text-shadow: 0 0 20px black;
+  background-image: url("../img/camp/bootcamp6_square.png");
+  background-size: contain;
   background-position: center;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  background-color: white;
 
   @include media-breakpoint-up(md) {
     height: 87vh;
+    background-image: url("../img/camp/bootcamp6_banner.png");
+    background-size: initial;
+    background-position: top;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
   }
 
-  .logo-container {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    text-align: center;
-
-    @include media-breakpoint-up(md) {
-      margin-top: 130px;
-    }
-    .logo {
-      width: 225px;
-      @include margin-x(auto);
-      filter: invert(1);
-
-      @include media-breakpoint-up(md) {
-        width: 400px;
-      }
-
-      @include media-breakpoint-up(sm) {
-        width: 300px;
-      }
-    }
+  .logo {
+    width: 130px;
+    margin-bottom: 10px;
   }
+
+  //.logo-container {
+  //  margin-top: 30px;
+  //  margin-bottom: 50px;
+  //  text-align: center;
+  //
+  //  @include media-breakpoint-up(md) {
+  //    margin-top: 130px;
+  //  }
+  //  .logo {
+  //    width: 225px;
+  //    @include margin-x(auto);
+  //    filter: invert(1);
+  //
+  //    @include media-breakpoint-up(md) {
+  //      width: 400px;
+  //    }
+  //
+  //    @include media-breakpoint-up(sm) {
+  //      width: 300px;
+  //    }
+  //  }
+  //}
   .caption-container {
     text-align: center;
     .caption {
       font-size: 2.2rem;
       margin-bottom: 5px;
       text-transform: uppercase;
+      background-color: white;
       //text-align: center;
 
       @include media-breakpoint-up(md) {
+        background-color: initial;
         margin-bottom: 5px;
-        font-size: 3.4rem;
+        font-size: 2.8rem;
       }
     }
     .subcaption {
       font-weight: 500;
       @include pad-x(20px);
       padding: 0;
-      font-size: $font-size-big-mobile;
+      font-size: $font-size-norm-mobile;
       @include media-breakpoint-up(md) {
         @include pad-x(20px);
-        font-size: $font-size-big-desktop;
+        font-size: $font-size-norm-desktop;
       }
     }
     .social-media {
