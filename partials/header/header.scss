@@ -7,7 +7,7 @@
 
   color: black;
   //text-shadow: 0 0 20px black;
-  background-image: url("../img/camp/bootcamp6_square.png");
+  background-image: url("../img/camp/bootcamp6_details.svg");
   background-size: contain;
   background-position: center;
   background-position-y: 20px;
@@ -16,16 +16,18 @@
 
   @include media-breakpoint-up(md) {
     height: 87vh;
-    background-image: url("../img/camp/bootcamp6_banner.png");
-    background-size: initial;
+    background-image: url("../img/camp/bootcamp6_banner.svg");
     background-position: top;
-    background-position-y: 20px;
+    background-position-y: 10px;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .logo {
     width: 130px;
     margin-bottom: 10px;
+    background: white;
+    padding: 7px;
   }
 
   //.logo-container {
@@ -67,6 +69,7 @@
     }
     .subcaption {
       font-weight: 500;
+      background: white;
       @include pad-x(20px);
       padding: 0;
       font-size: $font-size-norm-mobile;

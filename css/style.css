@@ -3562,7 +3562,7 @@ section {
   padding-bottom: 70px;
   height: 100vh;
   color: black;
-  background-image: url("../img/camp/bootcamp6_square.png");
+  background-image: url("../img/camp/bootcamp6_details.svg");
   background-size: contain;
   background-position: center;
   background-position-y: 20px;
@@ -3571,14 +3571,16 @@ section {
   @media (min-width: 768px) {
     #header {
       height: 87vh;
-      background-image: url("../img/camp/bootcamp6_banner.png");
-      background-size: initial;
+      background-image: url("../img/camp/bootcamp6_banner.svg");
       background-position: top;
-      background-position-y: 20px;
-      background-repeat: no-repeat; } }
+      background-position-y: 10px;
+      background-repeat: no-repeat;
+      background-size: contain; } }
   #header .logo {
     width: 130px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    background: white;
+    padding: 7px; }
   #header .caption-container {
     text-align: center; }
     #header .caption-container .caption {
@@ -3593,6 +3595,7 @@ section {
           font-size: 2.8rem; } }
     #header .caption-container .subcaption {
       font-weight: 500;
+      background: white;
       padding-left: 20px;
       padding-right: 20px;
       padding: 0;
